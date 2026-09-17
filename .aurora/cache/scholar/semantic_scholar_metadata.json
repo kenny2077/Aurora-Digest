@@ -7668,6 +7668,66 @@
         "year": 2026
       }
     },
+    "arxiv:2609.16629": {
+      "cached_at": "2026-09-17T05:11:05.906207+00:00",
+      "data": {
+        "abstract": "UAVs have emerged as highly flexible platforms for data sensing in Wireless Sensor Networks (WSNs). Path planning for UAVs in such tasks plays a key role to assure remote sensing effectiveness and friendly energy consumption. However, existing approaches show two key limitations: i) they are primarily hand-crafted with certain design biases that harm adaptation on unseen tasks. ii) they predominantly assume idealized spatial complexities of actual environments through simplified simulation, causing them to underperform during real-world deployment. In this paper, we propose a novel learning-assisted planning framework, termed Landscape-Aware Meta Differential Evolution (LAMDE), to tackle the mentioned limitations. The major contributions come from the following aspects. We first re-formulate such UAV path planning problem to embrace challenging constraints. To efficiently navigate this highly constrained space, we propose a bi-level learning to optimize approach, where the meta-level is a trainable algorithm configuration policy that meta-learns an adaptable planning strategy for low-level planning algorithm. To address the potential training data scarcity and distribution shift in real-world environments, we introduce a landscape-aware automatic augmentation scheme that enriches training data. At the low-level, a Differential Evolution algorithm is deployed for solving the path planning tasks. To enhance the solving flexibility, we further design a variable-length encoding strategy that dynamically prunes redundant hover points and optimizes continuous flight parameters concurrently within a unified search space. Based on all proposed designs, we meta-train LAMDE and compare it with representative baselines. Comprehensive experiments demonstrate that LAMDE achieves state-of-the-art performance on the tested complex UAV path planning tasks in WSN data collection scenarios.",
+        "authors": [
+          {
+            "authorId": "2351800796",
+            "name": "Si-Jie Ma"
+          },
+          {
+            "authorId": "2257372380",
+            "name": "Ze-Yuan Ma"
+          },
+          {
+            "authorId": "2499838877",
+            "name": "Wei-Jia Cao"
+          },
+          {
+            "authorId": "2283096236",
+            "name": "Yue-Jiao Gong"
+          },
+          {
+            "authorId": "2499951324",
+            "name": "Ling-Ling Ma"
+          },
+          {
+            "authorId": "2352424336",
+            "name": "Zhi-Yang Huang"
+          },
+          {
+            "authorId": "2268630566",
+            "name": "Jun Zhang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.16629",
+          "CorpusId": 292028807
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.16629, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "af47755e5b1fbcbfe814080945daf75ce36c4e3d",
+        "title": "Learning to Optimize UAV Path Planning for Data Sensing in Wireless Sensor Networks",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "A novel learning-assisted planning framework, termed Landscape-Aware Meta Differential Evolution (LAMDE), is proposed to tackle the mentioned limitations and achieves state-of-the-art performance on the tested complex UAV path planning tasks in WSN data collection scenarios."
+        },
+        "url": "https://www.semanticscholar.org/paper/af47755e5b1fbcbfe814080945daf75ce36c4e3d",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
