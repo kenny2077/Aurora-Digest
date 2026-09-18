@@ -12,7 +12,7 @@ This guide covers setup, testing, code expectations, and pull request hygiene.
 Run commands from the repository root.
 
 ```bash
-git clone https://github.com/kenny2077/Aurora.git
+git clone https://github.com/kenny2077/Aurora-Digest.git
 cd Aurora
 
 rtk uv sync --dev

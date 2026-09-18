@@ -13,8 +13,8 @@ scanning feeds and more time learning what is worth acting on.
 [![status](https://img.shields.io/badge/status-active-18c964?style=flat-square)](#)
 [![python](https://img.shields.io/badge/python-3.11%2B-3776ab?style=flat-square&logo=python&logoColor=white)](pyproject.toml)
 [![uv](https://img.shields.io/badge/uv-managed-654ff0?style=flat-square)](https://github.com/astral-sh/uv)
-[![workflow](https://img.shields.io/github/actions/workflow/status/kenny2077/Aurora/aurora-digest.yml?branch=main&style=flat-square&label=aurora-digest)](.github/workflows/aurora-digest.yml)
-[![pages](https://img.shields.io/badge/GitHub%20Pages-gh--pages-0ea5e9?style=flat-square)](https://kenny2077.github.io/Aurora/)
+[![workflow](https://img.shields.io/github/actions/workflow/status/kenny2077/Aurora-Digest/aurora-digest.yml?branch=main&style=flat-square&label=aurora-digest)](.github/workflows/aurora-digest.yml)
+[![pages](https://img.shields.io/badge/GitHub%20Pages-gh--pages-0ea5e9?style=flat-square)](https://kenny2077.github.io/Aurora-Digest/)
 [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 
 <br>

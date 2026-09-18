@@ -28,7 +28,7 @@ export default defineAstroPaperConfig({
     },
     search: "pagefind",
   },
-  socials: [{ name: "github", url: "https://github.com/kenny2077/Aurora" }],
+  socials: [{ name: "github", url: "https://github.com/kenny2077/Aurora-Digest" }],
   shareLinks: [
     { name: "whatsapp", url: "https://wa.me/?text=" },
     { name: "facebook", url: "https://www.facebook.com/sharer.php?u=" },
