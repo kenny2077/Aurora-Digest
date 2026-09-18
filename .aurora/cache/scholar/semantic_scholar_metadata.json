@@ -7728,6 +7728,63 @@
         "year": 2026
       }
     },
+    "arxiv:2609.18745": {
+      "cached_at": "2026-09-18T05:04:03.693548+00:00",
+      "data": {
+        "abstract": "Antibody lead optimization calls for a small, bounded set of edits to an existing candidate: substitutions, but also insertions and deletions. Edit-based generative models are the only ones that allocate such an edit budget without fixing the edit positions, the edit count, or the output length in advance. However, the existing approaches Edit Flows and EvoFlows did not release code or complete training specifications. Here, we show that both methods follow the same underlying process -- edits firing one at a time, at learned rates, in continuous time -- the pure-jump case of generator matching over finite sequences. With EditJumps we introduce the first open implementation of this framework, with a single generalist antibody editor trained on 1.66M Observed Antibody Space homolog pairs to propose homolog-like variants of a seed sequence, editing unseen leads zero-shot, without the per-family retraining original approaches require. Replicating this system from scratch exposes why open code is essential for generative biology: reconciling published edit distributions required reverse-engineering an undocumented rate-scaling hyperparameter that dictates realized mutation counts. Moreover, we show that published evaluation metrics are highly sensitive to reference sample size, frequently flipping method rankings. We release our full codebase, automated test suite, and configurations at: https://github.com/VisiumCH/editjumps",
+        "authors": [
+          {
+            "authorId": "2124213143",
+            "name": "Gabriel B\u00e9n\u00e9dict"
+          },
+          {
+            "authorId": "2500177613",
+            "name": "Melanie Buechler"
+          },
+          {
+            "authorId": "2500176712",
+            "name": "Gerard Riera-Sol\u00e0"
+          },
+          {
+            "authorId": "2500177610",
+            "name": "Chlo\u00e9 de Ancos"
+          },
+          {
+            "authorId": "2139824450",
+            "name": "Yves Ga\u00ebtan Nana Teukam"
+          },
+          {
+            "authorId": "1397064923",
+            "name": "Moritz Freidank"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.18745",
+          "CorpusId": 292049753
+        },
+        "fieldsOfStudy": [
+          "Computer Science",
+          "Mathematics"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.18745, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "61301dcb8c2b7d78d3e495c47344a2d2829776d8",
+        "title": "When Edit Flows are Edit Jumps: replicating Edit Flows and EvoFlows",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "The first open implementation of the antibody lead optimization framework is introduced, with a single generalist antibody editor trained on 1.66M Observed Antibody Space homolog pairs to propose homolog-like variants of a seed sequence, editing unseen leads zero-shot, without the per-family retraining original approaches require."
+        },
+        "url": "https://www.semanticscholar.org/paper/61301dcb8c2b7d78d3e495c47344a2d2829776d8",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
