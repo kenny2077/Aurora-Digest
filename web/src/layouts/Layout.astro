@@ -24,10 +24,12 @@ const {
 } = Astro.props;
 
 const socialImageURL = new URL(ogImage, Astro.site ?? Astro.url);
+// getRelativeLocaleUrl honours `trailingSlash: "ignore"` and appends a slash,
+// but /rss.xml/ is a 404 on GitHub Pages - the feed is served as a file.
 const rssHref = getRelativeLocaleUrl(
   Astro.currentLocale ?? config.site.lang,
   "rss.xml"
-);
+).replace(/\/$/, "");
 ---
 
 <!doctype html>
