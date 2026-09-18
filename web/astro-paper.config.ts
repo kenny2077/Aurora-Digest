@@ -2,7 +2,7 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://kenny2077.github.io/Aurora/",
+    url: "https://kenny2077.github.io/Aurora-Digest/",
     title: "Aurora Digest",
     description:
       "High-signal daily curation of tech news, GitHub repositories, and research papers.",

@@ -21,7 +21,7 @@ import config from "./astro-paper.config";
 
 export default defineConfig({
   site: "https://kenny2077.github.io",
-  base: "/Aurora",
+  base: "/Aurora-Digest",
   integrations: [
     mdx(),
     sitemap({

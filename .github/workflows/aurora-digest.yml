@@ -172,6 +172,7 @@ jobs:
         run: |
           test -s web/dist/index.html
           test -s web/dist/rss.xml
+          npm --prefix web run verify:pages
           test -d web/src/content/posts
           POST_COUNT="$(find web/src/content/posts -type f -name '*.md' | wc -l)"
           if [ "$POST_COUNT" -lt 1 ]; then
@@ -216,3 +217,21 @@ jobs:
             git -C "$PUBLISH_DIR" commit -m "Publish Aurora site"
             git -C "$PUBLISH_DIR" push origin gh-pages
           fi
+      - name: Verify deployed Pages site
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          PAGE_URL="https://kenny2077.github.io/Aurora-Digest/"
+          LIVE_PAGE="$(mktemp)"
+          for ATTEMPT in {1..30}; do
+            CACHE_BUSTED_URL="${PAGE_URL}?deployment=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${ATTEMPT}"
+            if curl --fail --silent --show-error --location --max-time 20 "$CACHE_BUSTED_URL" --output "$LIVE_PAGE" \
+              && cmp --silent web/dist/index.html "$LIVE_PAGE" \
+              && npm --prefix web run verify:pages -- "$CACHE_BUSTED_URL"; then
+              exit 0
+            fi
+            if [ "$ATTEMPT" -eq 30 ]; then
+              echo "::error::GitHub Pages did not serve the current build with valid assets within five minutes."
+              exit 1
+            fi
+            sleep 10
+          done

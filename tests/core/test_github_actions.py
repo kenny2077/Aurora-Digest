@@ -60,6 +60,7 @@ def test_github_actions_workflow_publishes_site_to_gh_pages_branch() -> None:
     assert "uv run aurora run \"${ARGS[@]}\" --strict-delivery" in workflow
     assert "SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}" in workflow
     assert "npm --prefix web run build" in workflow
+    assert "npm --prefix web run verify:pages" in workflow
     assert "test -s web/dist/index.html" in workflow
     assert "test -s web/dist/rss.xml" in workflow
     assert "find web/src/content/posts -type f -name '*.md'" in workflow
@@ -73,6 +74,8 @@ def test_github_actions_workflow_publishes_site_to_gh_pages_branch() -> None:
     assert "cp -R web/dist/. \"$PUBLISH_DIR\"/" in workflow
     assert "rm \"$PUBLISH_DIR/.nojekyll\"" not in workflow
     assert "git -C \"$PUBLISH_DIR\" push origin gh-pages" in workflow
+    assert "Verify deployed Pages site" in workflow
+    assert "https://kenny2077.github.io/Aurora-Digest/" in workflow
     assert "astral-sh/setup-uv" not in workflow
     assert "actions/upload-artifact" not in workflow
     assert "actions/download-artifact" not in workflow
