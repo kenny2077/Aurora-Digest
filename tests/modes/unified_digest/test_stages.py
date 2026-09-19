@@ -1377,6 +1377,50 @@ def test_unified_enrich_repairs_weak_selected_public_copy(monkeypatch) -> None:
     assert context.metadata["public_copy_quality"]["repaired"] == 2
 
 
+def test_unified_enrich_repairs_copy_rejected_by_the_rendered_digest_audit(monkeypatch) -> None:
+    monkeypatch.setenv("DEEPSEEK_API_KEY", "test-key")
+    config = AuroraConfig(
+        modes={
+            "unified_digest": {
+                "section_order": ["news", "repo", "paper"],
+                "section_limits": {"news": 1, "repo": 1, "paper": 1},
+            }
+        }
+    )
+    items = [
+        _item(
+            "news:evidence-label",
+            "news",
+            "Agent evaluation update",
+            9.0,
+            source="rss",
+            summary="Evidence: A new benchmark compares agent planning methods on realistic tasks.",
+        ),
+        _item("repo:1", "repo", "Repo", 8.0, metadata={"description": "A useful agent workflow toolkit."}),
+        _item("paper:1", "paper", "Paper", 8.0, summary="This paper explains a practical benchmark for AI agents."),
+    ]
+    context = StageContext(
+        mode="unified_digest",
+        run_id="test",
+        config=config,
+        metadata={"ai_usage": _empty_ai_usage()},
+    )
+
+    enriched = asyncio.run(
+        UnifiedEnrichStage(
+            client=_FakeAIClient(
+                [_payload(summary="A new benchmark compares agent planning methods on realistic tasks.")]
+            )
+        ).enrich(items, [], context)
+    )
+    summary = asyncio.run(UnifiedDigestSummarizer(config.modes.unified_digest).summarize(enriched, context))
+    rendered = asyncio.run(UnifiedDigestRenderer(config.modes.unified_digest).render(summary, enriched, context))
+
+    assert audit_rendered_public_digest(summary, str(rendered.metadata["web_html"])).ok
+    assert "Evidence:" not in summary
+    assert context.metadata["public_copy_quality"]["repaired"] == 1
+
+
 def test_unified_enrich_replaces_item_when_repair_still_fails(monkeypatch) -> None:
     monkeypatch.setenv("DEEPSEEK_API_KEY", "test-key")
     config = AuroraConfig(

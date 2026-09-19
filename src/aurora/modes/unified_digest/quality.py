@@ -103,6 +103,10 @@ def public_copy_quality(item: SignalItem) -> PublicCopyQuality:
     quality_lowered = "\n".join(quality_texts).lower()
     reasons: list[str] = []
 
+    for reason, pattern in RENDERED_FORBIDDEN_PATTERNS:
+        if any(pattern.search(value) for value in quality_texts):
+            reasons.append(reason)
+
     if len(normalized) < 20:
         reasons.append("too_short")
     if (
@@ -163,6 +167,7 @@ def public_copy_quality(item: SignalItem) -> PublicCopyQuality:
     if item.type == "paper" and RAW_ABSTRACT_PATTERN.search(normalized):
         reasons.append("raw_abstract_voice")
 
+    reasons = list(dict.fromkeys(reasons))
     return PublicCopyQuality(ok=not reasons, text=normalized, reasons=reasons)
 
 
@@ -371,6 +376,7 @@ def _repair_prompt(item: SignalItem) -> tuple[str, str]:
                 "concrete learning evidence",
                 "Relevant ML research candidate",
                 "raw Markdown headings",
+                "public labels such as Evidence:, Files:, Study:, Learn:, or Connections:",
                 "Title: title...",
                 "dangling endings such as 'and.' or 'Similar i.'",
             ],
