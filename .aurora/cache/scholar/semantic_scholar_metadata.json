@@ -7785,6 +7785,712 @@
         "year": 2026
       }
     },
+    "arxiv:2609.20565": {
+      "cached_at": "2026-09-19T23:17:23.162601+00:00",
+      "data": {
+        "abstract": "Recent advancements in large language models have revolutionized the field of psychological counseling, especially in the context of Cognitive Behavioral Therapy (CBT). While the success of CBT relies heavily on dynamic decision-making informed by the client's real-time mental state, this aspect has often been overlooked in current research, limiting both flexibility and therapeutic outcomes. In this paper, we introduce StratCBT, a dataset specifically designed for psychological counseling conversations with CBT Strategies, consisting of 9,688 sessions and around 256K utterances, with each counselor's response aligned with one of eight distinct strategies. The creation of StratCBT involves modeling clients based on their negative thoughts and generating high-quality counseling conversations through self-chat, incorporating realistic sessions as guidance, thereby significantly surpassing existing datasets in both general counseling and CBT-specific skills. We conduct extensive experiments to demonstrate the effectiveness of strategy-aligned generation and evaluate its efficacy in delivering professional and effective counseling with LLM-simulated clients to reflect real-world scenarios. The dataset can be obtained from https://github.com/zimuwangnlp/StratCBT.",
+        "authors": [
+          {
+            "authorId": "2394240974",
+            "name": "Zi-Mu Wang"
+          },
+          {
+            "authorId": "2348584209",
+            "name": "Yi-Wen Jiang"
+          },
+          {
+            "authorId": "2394699236",
+            "name": "Xiang-Yu Zhao"
+          },
+          {
+            "authorId": "2381376725",
+            "name": "Ya-Ling Shen"
+          },
+          {
+            "authorId": "2350681434",
+            "name": "Jia-He Liu"
+          },
+          {
+            "authorId": "2403071020",
+            "name": "Stephanie Fong"
+          },
+          {
+            "authorId": "2398724875",
+            "name": "Maxmartwell H. Cheng"
+          },
+          {
+            "authorId": "2394646299",
+            "name": "Guilherme C. Oliveira"
+          },
+          {
+            "authorId": "2495582529",
+            "name": "A. Nguyen"
+          },
+          {
+            "authorId": "2252954229",
+            "name": "Robert Desimone"
+          },
+          {
+            "authorId": "2257903252",
+            "name": "Barnaby Nelson"
+          },
+          {
+            "authorId": "2394172691",
+            "name": "Dominic Dwyer"
+          },
+          {
+            "authorId": "2257014345",
+            "name": "Zong-Yuan Ge"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20565",
+          "CorpusId": 292063571
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20565, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "4142f89d3e6547c93b73b134ca61722b4b2dbfa2",
+        "title": "Steering the Compass: Aligning Dynamic Psychological Counseling Conversations with Cognitive Behavioral Therapy Strategies",
+        "tldr": null,
+        "url": "https://www.semanticscholar.org/paper/4142f89d3e6547c93b73b134ca61722b4b2dbfa2",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20582": {
+      "cached_at": "2026-09-19T23:18:06.977109+00:00",
+      "data": {
+        "abstract": "Human manipulation videos provide rich motion and interaction cues for acquiring robot skills without robot demonstrations. Video generation models synthesize such demonstrations from an initial scene image and task instruction, avoiding the need to record demonstrations for each task. However, the recovered motion captures only one scene-specific realization, leaving task structure, geometric relations, and constraints implicit. We present V2-STRep, a zero-shot framework that converts generated video motion into reusable robot skills through VLM-grounded structured task representations. The representation specifies motion phases, references, and task-relevant constraints, with targets described by minimal geometric structures: points, point-normals, axes, planes, and full 6D poses. VLM-provided 2D image-space cues are lifted into 3D using RGB-D observations to reconstruct task geometry and candidate grasp poses. Geometry-specific rules transfer motion to new scenes, while task-constrained trajectory optimization couples grasp selection with complete robot motion planning. It preserves task requirements while using remaining rotational freedom to accommodate joint limits. Updating deployment grounding and constraints enables reuse under new compatible instructions without generating another video. Experiments on six real-world manipulation tasks demonstrate improved execution success over baselines, reliable cross-scene transfer of successfully acquired skills, and adaptation to changed deployment instructions.",
+        "authors": [
+          {
+            "authorId": "2405386172",
+            "name": "Yexin Hu"
+          },
+          {
+            "authorId": "2248101576",
+            "name": "Dongheui Lee"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20582",
+          "CorpusId": 292063569
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20582, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "4aa6b91d698586383a311ef8a4cde31678e0b599",
+        "title": "V2-STRep: VLM-Grounded Structured Task Representations for Reusable Robot Skills Acquired from Generated Videos",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "V2-STRep is presented, a zero-shot framework that converts generated video motion into reusable robot skills through VLM-grounded structured task representations, and demonstrates improved execution success over baselines, reliable cross-scene transfer of successfully acquired skills, and adaptation to changed deployment instructions."
+        },
+        "url": "https://www.semanticscholar.org/paper/4aa6b91d698586383a311ef8a4cde31678e0b599",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20584": {
+      "cached_at": "2026-09-19T23:17:13.824876+00:00",
+      "data": {
+        "abstract": "Large language models (LLMs) are increasingly considered for safety-critical engineering, yet their reliability in regulated functional-safety workflows remains underexplored. We introduce SAFARI (Safety-Aware Functional Automotive Risk Inference), the first industrial benchmark for LLM-assisted automotive Hazard Analysis and Risk Assessment (HARA) under ISO 26262. It contains 3,000 de-identified industrial HARA cases and evaluates two coupled tasks: open-ended hazard analysis and standards-grounded risk assessment. To evaluate open-ended HARA artifacts, we propose the first reference-anchored LLM-as-a-judge protocol with high expert correlation. Experiments with nine frontier LLMs show that models often produce plausible hazard narratives but remain weak at ISO 26262 risk classification, with the best ASIL macro-F1 reaching only 0.261. Chain-of-Thought prompting provides limited benefit and often degrades categorical risk assessment. Error analysis further localizes major failures to scenario-critical context omissions during hazard generation and to controllability misjudgments during risk assessment, indicating where expert oversight should be concentrated. The dataset can be obtained from https://github.com/xixi47520-hash/HARA.",
+        "authors": [
+          {
+            "authorId": "2500972533",
+            "name": "Chen-Xi Wu"
+          },
+          {
+            "authorId": "2391725174",
+            "name": "Zi-Mu Wang"
+          },
+          {
+            "authorId": "2403110915",
+            "name": "Hai-Yang Zhang"
+          },
+          {
+            "authorId": null,
+            "name": "Wei Wang"
+          },
+          {
+            "authorId": "2500920706",
+            "name": "Zhi-Jie Xu"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20584",
+          "CorpusId": 292062993
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20584, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "d30d03af98af01c5c96ca306f8d183965595cb78",
+        "title": "SAFARI: An Industrial Benchmark for LLM-Assisted Hazard Analysis and Risk Assessment",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": null
+        },
+        "url": "https://www.semanticscholar.org/paper/d30d03af98af01c5c96ca306f8d183965595cb78",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20586": {
+      "cached_at": "2026-09-19T23:17:00.283847+00:00",
+      "data": {
+        "abstract": "Referring scene understanding for embodied robots requires grounding object- and relation-centric language queries from a designated viewpoint. While a local semantic Gaussian map can support such grounding within one agent's observations, cooperative settings require this ability to remain effective after independently reconstructed maps are aligned and fused. In this setting, the referred target or its contextual landmark may come from another agent's observations, while spatial relations must still be interpreted from the querying robot's viewpoint. We formulate this problem as cooperative referring Gaussian grounding over fused maps, which requires geometric alignability, instance-level semantic comparability, and view-conditioned relation reasoning. Existing language-aware Gaussian methods mainly focus on single-map querying, whereas Gaussian registration methods optimize geometric or photometric alignment without preserving language-grounding-oriented semantic compatibility. We propose CoRef-GS, a cooperative referring Gaussian splatting framework. CoRef-GS constructs local open-vocabulary instance-aware Gaussian maps, then aligns partially overlapping maps with a cross-agent alignment module by geometric and semantic consistency, and grounds queries using a view-conditioned mask relation graph. We further introduce CoQuad-Ref, a dual-quadruped benchmark spanning both real-world and simulated indoor scenes. Experiments show that, on simulated scenes, CoRef-GS reduces the rotation error from 2.58{\\deg} after coarse initialization to 0.15{\\deg} after refinement, and improves real-world referring mIoU over ReferSplat from 52.6% to 68.8%. The established benchmark and source code will be publicly released at https://github.com/ruojiruoli17/CoRef-GS.git.",
+        "authors": [
+          {
+            "authorId": "2299162776",
+            "name": "Zhi-Kun Zhou"
+          },
+          {
+            "authorId": "91549683",
+            "name": "Kunyu Peng"
+          },
+          {
+            "authorId": "2340465172",
+            "name": "Run-Yi Yang"
+          },
+          {
+            "authorId": "2292341638",
+            "name": "Jun-Hao Cai"
+          },
+          {
+            "authorId": "2288587946",
+            "name": "Di Wen"
+          },
+          {
+            "authorId": "2273522374",
+            "name": "Ruiping Liu"
+          },
+          {
+            "authorId": "35268081",
+            "name": "D. Paudel"
+          },
+          {
+            "authorId": "2276461927",
+            "name": "Yi Zhou"
+          },
+          {
+            "authorId": "134339866",
+            "name": "L. van Gool"
+          },
+          {
+            "authorId": "8689702",
+            "name": "Kailun Yang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20586",
+          "CorpusId": 292063083
+        },
+        "fieldsOfStudy": [
+          "Computer Science",
+          "Engineering"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20586, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "68fe8be8c0b60bac9053af645664d9b8deb81195",
+        "title": "CoRef-GS: Cooperative Referring Gaussian Splatting for Multi-Agent Scene Understanding",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "CoRef-GS is proposed, a cooperative referring Gaussian splatting framework that constructs local open-vocabulary instance-aware Gaussian maps, then aligns partially overlapping maps with a cross-agent alignment module by geometric and semantic consistency, and grounds queries using a view-conditioned mask relation graph."
+        },
+        "url": "https://www.semanticscholar.org/paper/68fe8be8c0b60bac9053af645664d9b8deb81195",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20615": {
+      "cached_at": "2026-09-19T23:17:50.351187+00:00",
+      "data": {
+        "abstract": "Robots inspecting an assembly must determine which parts are present and whether they are correctly installed. During egocentric assembly assistance, head motion and workpiece handling reveal evidence for these checks, while spoken state confirmations link observations to procedural outcomes. We introduce INSPECT, which learns robot view preferences from records of a smart-glasses assistant that answers part queries and provides next-step guidance. Presence-Invariant TwinSwap (PI-TwinSwap) calibrates object evidence through paired identity interventions. Claim-indexed supervision separates evidence requirements from camera-reproducible observation changes. Object-centered calibration adapts relative view preferences to robot poses, while clause-level screening checks predicted evidence. The robot selects views using only its current observation and known poses, without candidate images. Evaluation uses annotated assistant-video replay to simulate state feedback, without target-domain view labels for policy training. On images of physical gearbox assemblies, INSPECT achieves the highest view utility among the compared non-oracle policies and raises human-rated full verifiability from 34.8% to 41.7% compared with keeping the current view. On commercial angle-grinder recordings in IMPACT, the transferred relative-view selector increases the correct decision rate from 50.6% to 54.3% with a frozen perception head. The source code is available at https://github.com/Kratos-Wen/INSPECT.",
+        "authors": [
+          {
+            "authorId": "2288587946",
+            "name": "Di Wen"
+          },
+          {
+            "authorId": "8689702",
+            "name": "Kailun Yang"
+          },
+          {
+            "authorId": "2500972788",
+            "name": "Wen-Hao Guo"
+          },
+          {
+            "authorId": "2243367905",
+            "name": "Yi-Tian Shi"
+          },
+          {
+            "authorId": "2210176414",
+            "name": "Junwei Zheng"
+          },
+          {
+            "authorId": "2243360598",
+            "name": "Yufan Chen"
+          },
+          {
+            "authorId": "2273522374",
+            "name": "Ruiping Liu"
+          },
+          {
+            "authorId": "2323059167",
+            "name": "Jiale Wei"
+          },
+          {
+            "authorId": "2266510450",
+            "name": "R. Rayyes"
+          },
+          {
+            "authorId": "91549683",
+            "name": "Kunyu Peng"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20615",
+          "CorpusId": 292063408
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20615, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "254537f950a7f3e738175ae2723e710867b5f2cb",
+        "title": "INSPECT: Learning Robot View Selection from Assistant Use",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "INSPECT is introduced, which learns robot view preferences from records of a smart-glasses assistant that answers part queries and provides next-step guidance and achieves the highest view utility among the compared non-oracle policies and raises human-rated full verifiability."
+        },
+        "url": "https://www.semanticscholar.org/paper/254537f950a7f3e738175ae2723e710867b5f2cb",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20629": {
+      "cached_at": "2026-09-19T23:17:48.171966+00:00",
+      "data": {
+        "abstract": "Autonomous recovery of a micro unmanned aerial vehicle (UAV) onto a moving airborne carrier enables reusable deploy-mission-recover operation, but couples long-range rendezvous, close-range perception, carrier motion, aerodynamic interaction, and a discontinuous contact event. This paper presents an RTK-vision-guided reinforcement-learning framework in which a child UAV is physically transported by a larger carrier, takes off from the carrier while airborne, executes an independent sortie, returns to the carrier's current position, redocks, and subsequently descends with the carrier. Both vehicles carry RTK-GNSS, and the carrier continuously shares its navigation state with the child. Near the recovery deck, RTK remains active while a downward-facing camera with a fiducial marker detector provides marker-relative alignment cues. A proximal policy optimization (PPO) policy governing the terminal recovery phase is trained in a physics-based MuJoCo simulation environment with explicit sensor noise models, an aerodynamic disturbance surrogate, and marker-latency randomization, then transferred to hardware. PX4 retains low-level stabilization, and a deterministic safety gate authorizes descent independently of the learned policy. The PPO checkpoint achieves 99.55% success over 2,000 held-out randomized terminal episodes, compared with 78.4% for a tuned PD baseline under identical conditions, with a median planar terminal error of 6.62 cm. Across 14 outdoor trials, the full mission succeeds in 13 trials (92.9%), spanning both near-region recovery and recovery after the carrier translates away from the release point. The results demonstrate a complete autonomous aerial deployment-and-recovery cycle rather than an isolated landing maneuver, establishing a practical basis for reusable carrier-child operation in inspection, surveillance, and mobile-logistics applications.",
+        "authors": [
+          {
+            "authorId": "2342698850",
+            "name": "Aashish Sahu"
+          },
+          {
+            "authorId": "2257132654",
+            "name": "R. P. Kumar"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20629",
+          "CorpusId": 292063154
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20629, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "7eb774417f737272b95176d084455d8952c87e27",
+        "title": "RTK-Vision PPO for Autonomous Micro UAV Recovery on an Airborne Carrier",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "An RTK-vision-guided reinforcement-learning framework in which a child UAV is physically transported by a larger carrier, takes off from the carrier while airborne, executes an independent sortie, returns to the carrier's current position, redocks, and subsequently descends with the carrier."
+        },
+        "url": "https://www.semanticscholar.org/paper/7eb774417f737272b95176d084455d8952c87e27",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20680": {
+      "cached_at": "2026-09-19T23:17:32.470962+00:00",
+      "data": {
+        "abstract": "Scalable machine learning in challenging underwater environments is strongly limited by the lack of labeled real-world training data. This data is often expensive and laborious to gather, making large-scale real-world data challenging to gather and curate. However, simulated data can help close the gap, enabling many learning-based tasks for underwater perception. In this work, we extend OceanSim, an IsaacSim-based underwater perception simulator, with a Synthetic Data Generation (SDG) pipeline for training models to be used in underwater scenarios. The proposed pipeline enables users to generate large, automatically labeled, photorealistic datasets with configurable scene appearance, structure, and sensor settings. We evaluate the pipeline on a real-world sea urchin detection task and study how different forms of synthetic scene variation affect sim-to-real performance. Based on these experiments, we discuss findings on our results, main limitations of the current pipeline and identify future directions for improving underwater rendering fidelity, scene diversity, and the evaluation of sim-to-real generalization. The open-source code can be found at https://github.com/umfieldrobotics/OceanSim.",
+        "authors": [
+          {
+            "authorId": "2348718182",
+            "name": "Hao-Yu Ma"
+          },
+          {
+            "authorId": "2223596928",
+            "name": "O. Bagoren"
+          },
+          {
+            "authorId": "2253464492",
+            "name": "Anja Sheppard"
+          },
+          {
+            "authorId": "2051892914",
+            "name": "Elias Fandi"
+          },
+          {
+            "authorId": "2500463938",
+            "name": "Ashrith Edukulla"
+          },
+          {
+            "authorId": "2500464257",
+            "name": "Tanner Aslan"
+          },
+          {
+            "authorId": "2500464219",
+            "name": "Natasha Sieh"
+          },
+          {
+            "authorId": "2112623690",
+            "name": "Jingyu Song"
+          },
+          {
+            "authorId": "2241279092",
+            "name": "Katherine A. Skinner"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20680",
+          "CorpusId": 292063064
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20680, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "fef4b4446cc0720011223db392f1afbed01d60d2",
+        "title": "Towards Scaling Marine Perception with Synthetic Data",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work extends OceanSim with a Synthetic Data Generation (SDG) pipeline for training models to be used in underwater scenarios, and evaluates the pipeline on a real-world sea urchin detection task and studies how different forms of synthetic scene variation affect sim-to-real performance."
+        },
+        "url": "https://www.semanticscholar.org/paper/fef4b4446cc0720011223db392f1afbed01d60d2",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20756": {
+      "cached_at": "2026-09-19T23:17:43.985369+00:00",
+      "data": {
+        "abstract": "As scaling pre-training data alone yields diminishing returns, post-training is becoming increasingly important across physical AI domains such as autonomous driving. End-to-end driving policies are pre-trained in open loop with behavior cloning on human demonstrations. However, compounding errors during closed-loop deployment can take the vehicle outside the training data distribution, increasing the risk of safety-critical incidents. Closed-loop post-training can mitigate this risk but requires costly simulation for sensor-based policies. We propose OPTED (on-policy fine-tuning for end-to-end driving) which decouples reinforcement learning from the post-training of the end-to-end policy: a privileged teacher is trained using RL on vectorized inputs (HD-map and bounding boxes). This teacher then provides supervision to the pre-trained student during closed-loop post-training. We apply OPTED to two camera-based models, TransFuser and VaVAM, and fine-tune them in AlpaSim, using neural reconstructions (3DGS) of real driving logs. Driving scores increase by factors of 1.6$\\times$ and 9.5$\\times$, respectively. In controlled experiments OPTED matches closed-loop performance with approximately three orders of magnitude fewer simulator interactions than direct RL post-training, while staying closer to the human prior. Project page: https://01dami23.github.io/opted/",
+        "authors": [
+          {
+            "authorId": "2500464514",
+            "name": "D. Da Col"
+          },
+          {
+            "authorId": "27550002",
+            "name": "M. Igl"
+          },
+          {
+            "authorId": "2316494",
+            "name": "Peter Karkus"
+          },
+          {
+            "authorId": "31352445",
+            "name": "Kashyap Chitta"
+          },
+          {
+            "authorId": "145156173",
+            "name": "B. Ivanovic"
+          },
+          {
+            "authorId": "2237790577",
+            "name": "Marco Pavone"
+          },
+          {
+            "authorId": "2352022360",
+            "name": "Konrad Schindler"
+          },
+          {
+            "authorId": "7593607",
+            "name": "Christos Sakaridis"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20756",
+          "CorpusId": 292063119
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20756, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "f091c6a5c907f696676799f5a45f6af980eb21be",
+        "title": "OPTED: On-Policy Fine-Tuning for End-to-End Driving using a Render-Free Teacher",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work proposes OPTED (on-policy fine-tuning for end-to-end driving) which decouples reinforcement learning from the post-training of the end-to-end policy: a privileged teacher is trained using RL on vectorized inputs (HD-map and bounding boxes) which provides supervision to the pre-trained student during closed-loop post-training."
+        },
+        "url": "https://www.semanticscholar.org/paper/f091c6a5c907f696676799f5a45f6af980eb21be",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20791": {
+      "cached_at": "2026-09-19T23:17:46.083620+00:00",
+      "data": {
+        "abstract": "Hierarchical planning frameworks combine skills from multiple robot control policies for long-horizon task execution, where determining when to terminate the current skill and advance to the next subtask is essential. Existing approaches often rely on pre-designed completion signal checkers that are hard to obtain in real-world execution. Large-scale vision-language models (VLMs) offer strong reasoning capabilities, but their decision boundaries are not inherently aligned with task completion criteria, while cloud deployment and lengthy reasoning introduce substantial latency, limiting real-time monitoring. We propose StageGuard, an agentic distillation framework for accurate and efficient stage-transition decisions. StageGuard combines teacher-model reasoning with demonstration trajectories to generate structured explanations of subtask completion and policy switching. A lightweight student VLM uses these explanations to generate compact self-explanations, which are used for supervised fine-tuning. We evaluate stage-transition prediction on trajectories from two benchmarks and assess closed-loop task success through integration into hierarchical robot control on BEHAVIOR-1K, with further validation on real robots. Results show substantial improvements in stage-transition prediction while supporting efficient online monitoring.",
+        "authors": [
+          {
+            "authorId": "2327412963",
+            "name": "Jinbang Huang"
+          },
+          {
+            "authorId": "2451267569",
+            "name": "Yuan Hu"
+          },
+          {
+            "authorId": "2395569136",
+            "name": "Zhi-Yuan Li"
+          },
+          {
+            "authorId": "2451571235",
+            "name": "Ran Qi"
+          },
+          {
+            "authorId": "2374005837",
+            "name": "Yixin Xiao"
+          },
+          {
+            "authorId": "2149123047",
+            "name": "Yang-Zheng Wu"
+          },
+          {
+            "authorId": "2500463661",
+            "name": "Teng-Yue Ba"
+          },
+          {
+            "authorId": "2302452881",
+            "name": "Zhan-Guang Zhang"
+          },
+          {
+            "authorId": "2501004925",
+            "name": "Ying-Xue Zhang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20791",
+          "CorpusId": 292063076
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20791, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "62c7cbbfc18eaea5eb3a8ec77a1023aa1a74bfc8",
+        "title": "StageGuard: Learning Stage Transitions for Long-Horizon Robot Tasks via Agentic Distillation",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work proposes StageGuard, an agentic distillation framework for accurate and efficient stage-transition decisions, which combines teacher-model reasoning with demonstration trajectories to generate structured explanations of subtask completion and policy switching."
+        },
+        "url": "https://www.semanticscholar.org/paper/62c7cbbfc18eaea5eb3a8ec77a1023aa1a74bfc8",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20800": {
+      "cached_at": "2026-09-19T23:17:11.722886+00:00",
+      "data": {
+        "abstract": "World modeling enables intelligence to anticipate consequences, guide interventions, and learn from interaction. Yet predictive models remain domain-specific: can a common learning principle support world modeling across radically different systems? We introduce JEPA-Anything, a domain-agnostic framework based on orthogonal predictive factorization (OPF). Extending joint-embedding predictive architectures, OPF decomposes latent targets into complementary factors, learns them through dedicated pathways, and recombines them within a shared predictive design. We evaluate JEPA-Anything across seven domains: vision, biology, clinical trajectories, control, molecular dynamics, physical fields, and weather. Experiments span representation learning, intervention prediction, out-of-distribution generalization, and long-horizon dynamics, including 10 matched dynamics tasks, forecasting of over 1,000 clinical events, and 100-step molecular rollouts across four systems. Against matched JEPA baselines, JEPA-Anything improves reported metrics on all 10 dynamics tasks and reduces single-intervention prediction error on Interventional Pong by 34.8%. It achieves the lowest one-step and 100-step molecular errors among compared methods in all four systems. Beyond prediction, a factor-nominated biological intervention receives experimental support in cell co-cultures, patient-derived organoids, tumor fragments, and mice; latent orbital modes recover the Keplerian scaling exponent with a fitted slope of -1.4991. These results support a common factorized predictive principle across heterogeneous worlds, connecting world modeling with intervention and experimentally grounded scientific discovery. Code: https://github.com/Gen-Verse/JEPA-Anything",
+        "authors": [
+          {
+            "authorId": "2378757034",
+            "name": "Tao-Yong Cui"
+          },
+          {
+            "authorId": "2321933655",
+            "name": "Zhong-Yao Wang"
+          },
+          {
+            "authorId": "2499629458",
+            "name": "Xin-Yue Xu"
+          },
+          {
+            "authorId": "2454703264",
+            "name": "Wei-Yang Liu"
+          },
+          {
+            "authorId": "2280285892",
+            "name": "Zhao-Chen Yu"
+          },
+          {
+            "authorId": "2501005796",
+            "name": "Yu-Ying Zhang"
+          },
+          {
+            "authorId": "2499876224",
+            "name": "Qiang Gao"
+          },
+          {
+            "authorId": "2350024706",
+            "name": "Meng-Yue Yang"
+          },
+          {
+            "authorId": "2253464521",
+            "name": "Wanli Ouyang"
+          },
+          {
+            "authorId": "2274486861",
+            "name": "Pheng-Ann Heng"
+          },
+          {
+            "authorId": "2382885192",
+            "name": "Ying-Cheng Wu"
+          },
+          {
+            "authorId": "2401784479",
+            "name": "Zhen-Fei Yin"
+          },
+          {
+            "authorId": "2374273466",
+            "name": "Ling Yang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20800",
+          "CorpusId": 292064050
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20800, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "ba43a23966622ae3823e225b32d69f59f0aea695",
+        "title": "JEPA-Anything: Learning Predictive Models across Different Worlds",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "JEPA-Anything, a domain-agnostic framework based on orthogonal predictive factorization (OPF), achieves the lowest one-step and 100-step molecular errors among compared methods in all four systems and supports a common factorized predictive principle across heterogeneous worlds."
+        },
+        "url": "https://www.semanticscholar.org/paper/ba43a23966622ae3823e225b32d69f59f0aea695",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20817": {
+      "cached_at": "2026-09-19T23:17:41.810803+00:00",
+      "data": {
+        "abstract": "Modeling articulated objects from sparse monocular views is challenging because each observation reveals only partial geometry and motion evidence. Most feed-forward methods infer articulation from a single observation and therefore rely heavily on learned category-level shape priors. We present FAMOS, a feed-forward model that predicts movable-part segmentation and joint parameters from a sparse, unordered set of partial point clouds. Our model jointly reasons over multiple observations and naturally supports a variable number of inputs, including a single view. To aggregate articulation cues across observations, we introduce a Multi-state Articulation Transformer with alternating state-wise and global attention. We further propose an observed articulation span objective that supervises the motion range each part exhibits across the input observations, encouraging the model to leverage the full observation set. To overcome the limited scale and diversity of existing datasets, we introduce a procedural data generator that synthesizes self-annotated assets during training. Experiments on PartNet-Mobility, ACD, and ArtiCraft-10K demonstrate consistent improvements over both feed-forward and optimization-based baselines. Project page: https://kevinqu7.github.io/famos",
+        "authors": [
+          {
+            "authorId": "2335870504",
+            "name": "Kevin Qu"
+          },
+          {
+            "authorId": "2367121164",
+            "name": "Tao Sun"
+          },
+          {
+            "authorId": "2335870109",
+            "name": "Massimiliano Viola"
+          },
+          {
+            "authorId": "2274193615",
+            "name": "Liyuan Zhu"
+          },
+          {
+            "authorId": "2482875204",
+            "name": "Zhizhuo Zhou"
+          },
+          {
+            "authorId": "1645125140",
+            "name": "Sayan Deb Sarkar"
+          },
+          {
+            "authorId": "2265966297",
+            "name": "Konrad Schindler"
+          },
+          {
+            "authorId": "2315506819",
+            "name": "Iro Armeni"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20817",
+          "CorpusId": 292061357
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20817, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "2818b9725afd53371782f6e70b17b94cae00320b",
+        "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "FAMOS, a feed-forward model that predicts movable-part segmentation and joint parameters from a sparse, unordered set of partial point clouds, is presented and a procedural data generator that synthesizes self-annotated assets during training is introduced to overcome the limited scale and diversity of existing datasets."
+        },
+        "url": "https://www.semanticscholar.org/paper/2818b9725afd53371782f6e70b17b94cae00320b",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
