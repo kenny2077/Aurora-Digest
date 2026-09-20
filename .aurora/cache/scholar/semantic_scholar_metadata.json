@@ -7785,6 +7785,380 @@
         "year": 2026
       }
     },
+    "arxiv:2609.19550": {
+      "cached_at": "2026-09-20T05:17:04.359020+00:00",
+      "data": {
+        "abstract": "Materials discovery and design campaigns can be formulated as constrained multi-objective Bayesian optimization (CMOBO) problems, within which each experimental decision negotiates between two coupled but competing goals: discovering feasible candidates and refining the underlying Pareto front. Here we recast acquisition-function choice as an adaptive policy-selection problem over a portfolio of conventional and feasibility-focused acquisition functions. This was done using two controllers: UCB-Bandit, a modified UCB multi-armed bandit, and Agentic-Switch, a multi-agent decision system driven by a large language model (LLM). Both were evaluated against fixed-policy baselines in silico across five synthetic benchmark functions and two materials design case studies. The adaptive policies performed competitively in terms of both cumulative feasibility count and feasible hypervolume improvement, while each individual acquisition function performed well for only one metric, suggesting that adaptive policies are better suited for constrained materials science problems.",
+        "authors": [
+          {
+            "authorId": "49556281",
+            "name": "S. Sinha"
+          },
+          {
+            "authorId": "2345823277",
+            "name": "Christofer Hardcastle"
+          },
+          {
+            "authorId": "2322505905",
+            "name": "Robert Robinson"
+          },
+          {
+            "authorId": "2165337251",
+            "name": "S. P. Padhy"
+          },
+          {
+            "authorId": "2316051428",
+            "name": "Brent Vela"
+          },
+          {
+            "authorId": "2262985860",
+            "name": "Douglas L. Allaire"
+          },
+          {
+            "authorId": "2348284056",
+            "name": "Raymundo Arr\u00f3yave"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.19550",
+          "CorpusId": 292058707
+        },
+        "fieldsOfStudy": [
+          "Physics",
+          "Mathematics"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.19550, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "fac2608b92d2adb98aa03935b449ab5b3a463c22",
+        "title": "Portfolio-Based Constrained Multi-Objective Bayesian Optimization for Materials Design",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "The adaptive policies performed competitively in terms of both cumulative feasibility count and feasible hypervolume improvement, while each individual acquisition function performed well for only one metric, suggesting that adaptive policies are better suited for constrained materials science problems."
+        },
+        "url": "https://www.semanticscholar.org/paper/fac2608b92d2adb98aa03935b449ab5b3a463c22",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20082": {
+      "cached_at": "2026-09-20T05:17:23.095500+00:00",
+      "data": {
+        "abstract": "Tool learning enables large language models (LLMs) to use external tools for tasks beyond parametric knowledge. Reinforcement learning can optimize tool-call behavior from feedback, but current methods still face two problems: fixed-threshold curricula can become misaligned with the policy's evolving capability boundary, and additive rewards can leak argument-level credit when the predicted tool is wrong. To address these problems, we propose MATCH, a closed-loop framework for model-aware tool learning with curriculum scheduling and hierarchically gated rewards. Model-Aware Curriculum Learning (MACL) maintains reward-derived sample difficulty that co-evolves with the policy, and each epoch selects samples near the current capability boundary together with a top-k pool of harder cases. Hierarchical Tool-call Gated Reward (HTGR) scores tool name, argument key, and argument value as a gated chain, granting credit at each level only when prerequisites hold. The same HTGR rewards drive both GRPO updates and MACL's difficulty refresh, closing the loop between policy optimization and sample scheduling. On API-Bank and BFCL V3, MATCH reaches 72.19% and 62.87% overall accuracy, outperforming the main supervised and RL-based baselines. Backbone experiments further show consistent improvements across four backbones from two model families.",
+        "authors": [
+          {
+            "authorId": "2310512864",
+            "name": "Shihao Liu"
+          },
+          {
+            "authorId": "2500929938",
+            "name": "Hao Yin"
+          },
+          {
+            "authorId": "2367179614",
+            "name": "Li-Jun Liu"
+          },
+          {
+            "authorId": "2451306902",
+            "name": "Zheng-Zong Chen"
+          },
+          {
+            "authorId": "2388192332",
+            "name": "Yuan-Yuan Zhao"
+          },
+          {
+            "authorId": "2276428076",
+            "name": "Fei Huang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20082",
+          "CorpusId": 292063177
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20082, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "14beebc43e5490168c754429505d64d430fc1fe1",
+        "title": "MATCH: Model-Aware Tool Learning with Curriculum Scheduling and Hierarchically Gated Rewards",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work proposes MATCH, a closed-loop framework for model-aware tool learning with curriculum scheduling and hierarchically gated rewards, and shows consistent improvements across four backbones from two model families."
+        },
+        "url": "https://www.semanticscholar.org/paper/14beebc43e5490168c754429505d64d430fc1fe1",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20131": {
+      "cached_at": "2026-09-20T05:17:20.844669+00:00",
+      "data": {
+        "abstract": "Reasoning-based reranking with Large Language Models (LLMs) has shown promising improvements in text ranking. However, current methods predominantly rely on a single reasoning trajectory, resulting in rankings that are susceptible to reasoning errors and inherently constrained in modeling the multifaceted signals underlying document relevance. To resolve this dilemma, we propose MERIT-Rank(Multi-perspective Evidence and Reasoning Integration for Text Reranking), a framework that models complementary reasoning trajectories to improve reranking robustness. MERIT-Rank formulates a Multi-Trajectory Reasoning Space (MTRS) that evaluates query-document relevance from multiple perspectives and introduces a joint reranker that consolidates these reasoning paths into a unified ranking decision. We further develop Progressive Rank Policy Optimization (PRPO), a progressive training framework that stabilizes reasoning trajectories while continually improving ranking quality through staged optimization objectives. Experiments on both reasoning-intensive and traditional retrieval benchmarks show that MERIT-Rank consistently achieves superior performance over competitive baselines. The 4B model notably outperforms most 7B and even 32B rerankers on BRIGHT.",
+        "authors": [
+          {
+            "authorId": "2367179614",
+            "name": "Li-Jun Liu"
+          },
+          {
+            "authorId": "2451306902",
+            "name": "Zheng-Zong Chen"
+          },
+          {
+            "authorId": "2500935137",
+            "name": "Wen-Yan Li"
+          },
+          {
+            "authorId": "2388192332",
+            "name": "Yuan-Yuan Zhao"
+          },
+          {
+            "authorId": "2276428076",
+            "name": "Fei Huang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20131",
+          "CorpusId": 292063101
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20131, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "544063984072ceb160688e00cfe6fb93ba0cafde",
+        "title": "Think Thrice Before Reranking: Multi-perspective Evidence and Reasoning Integration for Text Reranking",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "MERIT-Rank is proposed, a framework that models complementary reasoning trajectories to improve reranking robustness and develops Progressive Rank Policy Optimization (PRPO), a progressive training framework that stabilizes reasoning trajectories while continually improving ranking quality through staged optimization objectives."
+        },
+        "url": "https://www.semanticscholar.org/paper/544063984072ceb160688e00cfe6fb93ba0cafde",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20519": {
+      "cached_at": "2026-09-20T05:16:27.033089+00:00",
+      "data": {
+        "abstract": "As coding agents move from supervised code completion to unattended, around-the-clock exploration, their work expands from isolated predictions into long trajectories of reasoning, tool use, and feedback. Token efficiency therefore becomes important for scaling recursive self-improvement. We take an RSI-inspired approach at the harness layer, scaling auto-research loops across increasingly numerous and diverse environments for harness rollouts. At this scale, the process yields reusable improvements that transfer beyond their development setting, moving automated harness discovery toward production-level outcomes. Four mechanisms survive selection and form SoL-Pi, spanning action execution, context compaction, observation handling, and delegated reading. On the 51-task EdgeBench evaluation, SoL-Pi achieves performance comparable to Pi across GPT-5.6 Sol and Opus 5 while reducing recorded token traffic by 44.7-49.0% and API cost by about one third. In other words, estimated hourly savings are \\$8.75-\\$13.50 relative to native Codex and Claude Code harnesses, and \\$4.36-\\$5.71 relative to Pi.",
+        "authors": [
+          {
+            "authorId": "2383008898",
+            "name": "Hao-Zhe Liu"
+          },
+          {
+            "authorId": "2280882260",
+            "name": "Tian Ye"
+          },
+          {
+            "authorId": "2292213855",
+            "name": "Sen-Sen Gao"
+          },
+          {
+            "authorId": "2363908424",
+            "name": "Qi Cao"
+          },
+          {
+            "authorId": "2327988993",
+            "name": "Yi-Tong Li"
+          },
+          {
+            "authorId": "1722264111",
+            "name": "Mingchen Zhuge"
+          },
+          {
+            "authorId": "2341662997",
+            "name": "Duo-Min Wang"
+          },
+          {
+            "authorId": "2500918006",
+            "name": "Rui-Hua Zhang"
+          },
+          {
+            "authorId": "2265384343",
+            "name": "Ping Luo"
+          },
+          {
+            "authorId": "2276424396",
+            "name": "Jia-Wang Bian"
+          },
+          {
+            "authorId": "2499624836",
+            "name": "Lei Zhu"
+          },
+          {
+            "authorId": "20515689",
+            "name": "Ligeng Zhu"
+          },
+          {
+            "authorId": "41020000",
+            "name": "Enze Xie"
+          },
+          {
+            "authorId": "2283171540",
+            "name": "Song Han"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20519",
+          "CorpusId": 292063256
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20519, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "b91d16e3cd753c397f0988d9afc63c785079aa2a",
+        "title": "SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work takes an RSI-inspired approach at the harness layer, scaling auto-research loops across increasingly numerous and diverse environments for harness rollouts, and yields reusable improvements that transfer beyond their development setting."
+        },
+        "url": "https://www.semanticscholar.org/paper/b91d16e3cd753c397f0988d9afc63c785079aa2a",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20524": {
+      "cached_at": "2026-09-20T05:17:25.211197+00:00",
+      "data": {
+        "abstract": "Rigid-body interpenetration frequently occurs in procedurally assembled and generated scenes and must be removed before downstream applications such as physical simulation. We present S4R (Scaling for Rigid-Body Interpenetration Resolution), a scale-continuation method for static interpenetration repair. S4R first uniformly shrinks each body about a fixed reference center to a small initial scale, at which the layout is penetration-free, and then restores full scale through a sequence of minimum-norm convex contact quadratic programs (QPs) that target the linearized separation margin during continuation. Resolution thereby replaces one deep correction with a sequence of shallow-contact subproblems. A conservative scale-event bound and frozen-witness gap predictions cut the number of exact mesh queries; the continuation then ends with a full-scale evaluator check and bounded tail refinement. We evaluate S4R on Kubric, HY3D-Bench, and Thingi10K using a shared mesh-level evaluator and a unified per-scene timing protocol. In the main comparisons on all three benchmarks, up to N=5000 bodies, S4R reaches zero reported penetration with displacement that stays small and nearly independent of scene size, and at the lowest wall time within each hardware tier among the compared methods. A GPU implementation extends these results to large-scale scenes. Our code and data can be found on our project page: https://frank-zy-dou.github.io/projects/S4R/index.html.",
+        "authors": [
+          {
+            "authorId": "2292386296",
+            "name": "Zhi-Yang Dou"
+          },
+          {
+            "authorId": "2457682986",
+            "name": "An-Yu Zhao"
+          },
+          {
+            "authorId": "2500609157",
+            "name": "Chen Peng"
+          },
+          {
+            "authorId": "2258740917",
+            "name": "Ming-Hao Guo"
+          },
+          {
+            "authorId": "2500975289",
+            "name": "Hai-Xu Wu"
+          },
+          {
+            "authorId": "2268380305",
+            "name": "Cheng Lin"
+          },
+          {
+            "authorId": "2261611936",
+            "name": "Yuan Liu"
+          },
+          {
+            "authorId": "2349941626",
+            "name": "Jun-Feng Yao"
+          },
+          {
+            "authorId": "2261772085",
+            "name": "Xiao-Hu Guo"
+          },
+          {
+            "authorId": "2320468506",
+            "name": "Wen-Ping Wang"
+          },
+          {
+            "authorId": "2295306221",
+            "name": "Wojciech Matusik"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20524",
+          "CorpusId": 292062946,
+          "DOI": "10.1145/3842510"
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20524, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "28ca244d3a1c4f5c99548814900dfaee4391db28",
+        "title": "S4R: Scaling for Rigid-Body Interpenetration Resolution",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work presents S4R (Scaling for Rigid-Body Interpenetration Resolution), a scale-continuation method for static interpenetration repair, and evaluates S4R on Kubric, HY3D-Bench, and Thingi10K using a shared mesh-level evaluator and a unified per-scene timing protocol."
+        },
+        "url": "https://www.semanticscholar.org/paper/28ca244d3a1c4f5c99548814900dfaee4391db28",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20558": {
+      "cached_at": "2026-09-20T05:16:11.372924+00:00",
+      "data": {
+        "abstract": "Roofing requires workers to coordinate locomotion, balance, and work-related body motions on pitched surfaces, creating a challenging application for humanoid robots. Directly retargeted human demonstrations, however, may preserve motion appearance while placing the robot's feet or hands incorrectly relative to the roof. This study presents a task-semantic scene-grounded framework for learning roofer-style whole-body motions on a Unitree G1. Human demonstrations are captured using a tracking system and retargeted to the robot, while a metric roof model supplies the spatial reference unavailable from the tracking system. A trajectory-level optimization grounds inferred support contacts and annotated work relations to the roof, and execution-aware reinforcement learning encourages the resulting policy to preserve these relations under dynamic tracking errors. The framework is evaluated through a multi-motion tracking study, a roof-pitch coverage matrix, a five-way nailgun ablation, cross-task experiments on hammering and lateral pushing, and comparisons with pure reinforcement learning and zero-shot teleoperation. Our method enables the robot to satisfy support, work-clearance, and nonpenetration criteria across all evaluated seeds. Across nailgun, hammering, and pushing, it achieves work-clearance errors between 0.256 and 0.531 cm and 3/3 successful evaluations per task. Physical experiments reproduce uphill walking, nailgun, hammering, and bending motions with mean base-frame motion errors below 80 mm. These findings establish scene-grounded human motion learning as a promising basis for construction-oriented humanoid motion primitives.",
+        "authors": [
+          {
+            "authorId": "2281231788",
+            "name": "Song-Yan Liu"
+          },
+          {
+            "authorId": "2321931908",
+            "name": "Shuai Li"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20558",
+          "CorpusId": 292063557
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20558, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "7abbf62a14e2db3a5c1b0aa66631dccbed8ca0fe",
+        "title": "Learning Slope-Adaptive Whole-Body Locomotion for Humanoid Robots in Roofing Construction",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "A task-semantic scene-grounded framework for learning roofer-style whole-body motions on a Unitree G1, establishing scene-grounded human motion learning as a promising basis for construction-oriented humanoid motion primitives."
+        },
+        "url": "https://www.semanticscholar.org/paper/7abbf62a14e2db3a5c1b0aa66631dccbed8ca0fe",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2609.20565": {
       "cached_at": "2026-09-19T23:17:23.162601+00:00",
       "data": {
@@ -8143,6 +8517,74 @@
         "year": 2026
       }
     },
+    "arxiv:2609.20630": {
+      "cached_at": "2026-09-20T05:16:38.402787+00:00",
+      "data": {
+        "abstract": "Search advertising connects user intent with commercial content and plays a critical role in platform monetization. Recent systems typically align pretrained generative models with a single business reward, such as eCPM, or use naive reward fusion for preliminary multi-objective alignment. However, an ideal search advertising system must jointly account for heterogeneous objectives, including relevance, click propensity, and commercial value, to balance user experience and business value while mitigating globally suboptimal performance caused by gradient competition. We propose UniPolicy, an objective-aware multi-policy alignment framework. UniPolicy combines objective-specific prefix tokens, sparse MoE-LoRA routing, and objective-specific residual FFNs to hierarchically decouple parameters within a shared backbone, providing differentiated parameter and policy-expression spaces for different business objectives. It further constructs pairwise preferences from multi-stage behavioral feedback, supplementing the relative preference information in exposed-but-unclicked samples and strengthening the relative advantage of clicked candidates in the generation distribution. At inference, UniPolicy supports parallel, business-customizable multi-policy beam search, flexibly allocating candidate quotas across objectives under a fixed retrieval budget. Large-scale offline experiments show that UniPolicy delivers balanced improvements across multiple metrics while preserving retrieval quality, outperforming single-objective reinforcement learning and naive reward-fusion baselines. In a 7-day online A/B test on a real search advertising system, UniPolicy improves CTR by 0.71%, RPS by 1.58%, and advertising revenue by 1.32%, while maintaining stable serving latency.",
+        "authors": [
+          {
+            "authorId": "2354679267",
+            "name": "Kun Yao"
+          },
+          {
+            "authorId": "2500929782",
+            "name": "Yu-Hang Zhou"
+          },
+          {
+            "authorId": "2501007278",
+            "name": "Yi-Chi Zhang"
+          },
+          {
+            "authorId": "2500466875",
+            "name": "Ze-Liang Tong"
+          },
+          {
+            "authorId": "2334616998",
+            "name": "Sheng Xue"
+          },
+          {
+            "authorId": "2500931683",
+            "name": "Hai-Tao Wang"
+          },
+          {
+            "authorId": "2301271456",
+            "name": "Si-Yu Lu"
+          },
+          {
+            "authorId": "2274355501",
+            "name": "Qianlong Xie"
+          },
+          {
+            "authorId": "2144803534",
+            "name": "Xingxing Wang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20630",
+          "CorpusId": 292063505
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20630, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "581def2af4ccabff35d9216a46e4d591c662c139",
+        "title": "UniPolicy: Unified Objective-Specific Policies for Generative Search Advertising",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "UniPolicy is proposed, an objective-aware multi-policy alignment framework that supports parallel, business-customizable multi-policy beam search, flexibly allocating candidate quotas across objectives under a fixed retrieval budget and outperforming single-objective reinforcement learning and naive reward-fusion baselines."
+        },
+        "url": "https://www.semanticscholar.org/paper/581def2af4ccabff35d9216a46e4d591c662c139",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2609.20680": {
       "cached_at": "2026-09-19T23:17:32.470962+00:00",
       "data": {
@@ -8211,6 +8653,151 @@
         "year": 2026
       }
     },
+    "arxiv:2609.20734": {
+      "cached_at": "2026-09-20T05:16:29.154577+00:00",
+      "data": {
+        "abstract": "Reasoning and agentic workloads increasingly demand efficient long-context inference. Yet full-attention decoding reads the growing history at every step, regardless of its benefit to the next prediction. We show that a pretrained model's decoding states already contain information predictive of this benefit, before the global read. Building on this finding, we introduce On-Demand Attention (ODA), a local-first decoding method that uses a lightweight recall head to selectively invoke global attention as its predicted benefit changes during generation. ODA trains only the recall head, leaving pretrained weights unchanged and the complete historical KV cache available for future recall. We further implement GPU-side conditional execution in vLLM, translating reduced global reads into practical decoding speedups over full attention at long context lengths. Experiments across Qwen and Gemma models, including hybrid-attention backbones, show that selective recall recovers most of the performance lost under local attention while substantially reducing global reads. These findings support long-context inference in which pretrained models guide their own access to the information they retain.",
+        "authors": [
+          {
+            "authorId": "2387130693",
+            "name": "Hai-Bo Feng"
+          },
+          {
+            "authorId": "2376124865",
+            "name": "Ruiqi Liang"
+          },
+          {
+            "authorId": "3220396",
+            "name": "Han-Yang Peng"
+          },
+          {
+            "authorId": "2247323181",
+            "name": "Shi-Qi Yu"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20734",
+          "CorpusId": 292063367
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20734, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "8da785252ba758eed80836daa30707f53a485ad5",
+        "title": "On-Demand Attention: Language Models Know When to Recall",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "These findings support long-context inference in which pretrained models guide their own access to the information they retain, by introducing On-Demand Attention (ODA), a local-first decoding method that uses a lightweight recall head to selectively invoke global attention as its predicted benefit changes during generation."
+        },
+        "url": "https://www.semanticscholar.org/paper/8da785252ba758eed80836daa30707f53a485ad5",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20747": {
+      "cached_at": "2026-09-20T05:16:15.597696+00:00",
+      "data": {
+        "abstract": "Reinforcement learning constitutes a promising approach owing to its potential for superhuman performance and self-learned policies. However, its application to real-world autonomous driving remains scarce, particularly in unstructured environments, because of the challenges associated with sim-to-real transfer for unstructured environments. In this work, we present MILER, an end-to-end policy framework with zero-shot sim-to-real transfer. During offline training, we employ a custom semantic mid-level representation (MLR) simulator and train the policy network using reinforcement learning, with its control outputs applied directly to a bicycle model. During deployment on the real vehicle, camera and LiDAR data are processed by BEVFusion to generate a semantic bird's-eye-view representation consistent with that of the MLR simulator. The actions generated by the policy network are not applied directly to the real vehicle. Instead, we employ a trajectory-alignment strategy that enables zero-shot sim-to-real transfer of both perception and control. We extensively evaluate the proposed framework on a diverse test track comprising numerous challenges, including various obstacles, hairpin curves, velocities of up to 33.6 km/h, and off-road sections. In total, we drove 17.3 km with two different vehicles on a 3.0 km test track without human intervention, thereby demonstrating the effectiveness of our approach. Furthermore, the entire software stack runs on a Jetson AGX Orin.",
+        "authors": [
+          {
+            "authorId": "2176116892",
+            "name": "Thomas Steinecker"
+          },
+          {
+            "authorId": "2391709882",
+            "name": "Denis Trescher"
+          },
+          {
+            "authorId": "2311730411",
+            "name": "Alexander Bienemann"
+          },
+          {
+            "authorId": "2309515983",
+            "name": "Thorsten Luettel"
+          },
+          {
+            "authorId": "2065819746",
+            "name": "M. Maehlisch"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20747",
+          "CorpusId": 292063060
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20747, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "d7406aa4515f33f6223a77c30986f384fd20a7b6",
+        "title": "MILER: Semantic Mid-Level Representation for Sim-to-Real Reinforcement Learning in Unstructured Autonomous Driving",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "MILER, an end-to-end policy framework with zero-shot sim-to-real transfer of both perception and control, is presented and extensively evaluated on a diverse test track comprising numerous challenges."
+        },
+        "url": "https://www.semanticscholar.org/paper/d7406aa4515f33f6223a77c30986f384fd20a7b6",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20752": {
+      "cached_at": "2026-09-20T05:16:17.816214+00:00",
+      "data": {
+        "abstract": "Falsification searches for counterexamples to formal specifications in cyber-physical systems (CPS). With specifications written in Signal Temporal Logic (STL), falsification can be formulated as a robustness optimization problem, traditionally tackled with black-box search algorithms. In parallel, large language models (LLMs) have recently emerged as surprisingly effective optimizers when coupled with iterative prompting. In this work, we connect these ideas and introduce LLM-Falsifier, an LLM-based approach that falsifies specifications by minimizing the STL robustness degree. Beyond generic prompt-based optimization, our key idea is to expose the LLM to semantic information that is natural for language models but absent from standard numerical optimizers, including natural-language input and output names, output trajectories, and critical-time witnesses for the minimum robustness value. These additions enable smarter and more sample-efficient robustness search. On the ARCH-COMP falsification benchmarks, LLM-Falsifier is shown to outperform existing falsification tools based on a range of optimization paradigms, from surrogate-based and Bayesian optimization to search-based testing, on 14 of 21 specifications when measured by the average number of simulations required to find a counterexample.",
+        "authors": [
+          {
+            "authorId": "2051294697",
+            "name": "Ali ArjomandBigdeli"
+          },
+          {
+            "authorId": "2491713664",
+            "name": "Jia-Wei Zhou"
+          },
+          {
+            "authorId": "2278677018",
+            "name": "Stanley Bak"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20752",
+          "CorpusId": 292063301
+        },
+        "fieldsOfStudy": [
+          "Engineering",
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20752, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "c0c60d06c6aae3ca27d41e713d89401abcaf69a8",
+        "title": "Large Language Models as Falsifiers for Cyber-Physical Systems",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "LLM-Falsifier is shown to outperform existing falsification tools based on a range of optimization paradigms, from surrogate-based and Bayesian optimization to search-based testing, on 14 of 21 specifications when measured by the average number of simulations required to find a counterexample."
+        },
+        "url": "https://www.semanticscholar.org/paper/c0c60d06c6aae3ca27d41e713d89401abcaf69a8",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "arxiv:2609.20756": {
       "cached_at": "2026-09-19T23:17:43.985369+00:00",
       "data": {
@@ -8271,6 +8858,66 @@
           "text": "This work proposes OPTED (on-policy fine-tuning for end-to-end driving) which decouples reinforcement learning from the post-training of the end-to-end policy: a privileged teacher is trained using RL on vectorized inputs (HD-map and bounding boxes) which provides supervision to the pre-trained student during closed-loop post-training."
         },
         "url": "https://www.semanticscholar.org/paper/f091c6a5c907f696676799f5a45f6af980eb21be",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20761": {
+      "cached_at": "2026-09-20T05:16:13.494822+00:00",
+      "data": {
+        "abstract": "World Action Models (WAMs) advance beyond conventional visuomotor policies by jointly predicting future world states and robot actions, enabling the policy to learn physical dynamics that support effective control. However, recent tactile WAMs often rely on large-scale pretrained generative backbones to capture contact-rich physical dynamics, which limit their inference efficiency and flexible deployment. In this paper, we present \\ABBR{}, an agile tactile World Action Model for contact-rich robot control. \\ABBR{} encodes visual and tactile observations into a shared latent that serves as the source of a direct vision-tactile-to-action flow-matching process, which can jointly generate latent representations of action chunks and future visual/tactile latents. A key observation is that vision and tactile signals evolve at inherently different timescales: adjacent visual frames are often highly similar, whereas tactile signals can change abruptly upon contact. We therefore introduce multi-horizon multimodal prediction in \\ABBR{}, which provides supervision for visual latent at a larger temporal offset while predicting the tactile latent in the next frame to capture fine-grained contact dynamics. Across nine simulated and five real-world contact-rich manipulation tasks, \\ABBR{} demonstrates strong and robust performance, outperforming the strongest baseline in success rate while maintaining low inference latency. In particular, in five real-world experiments, \\ABBR{} yields a relative gain of $\\textbf{29.4\\%}$ in overall success rates while achieving inference latency of $\\textbf{11.9 ms}$. These results demonstrate that multimodal WAM can be achieved with an agile architecture suitable for precise and high-frequency robot control. More details are available on our project page: https://hanchuzhou.github.io/TARO_project_page/.",
+        "authors": [
+          {
+            "authorId": "2301522137",
+            "name": "Han-Chu Zhou"
+          },
+          {
+            "authorId": "2500473073",
+            "name": "Brendan Lynch"
+          },
+          {
+            "authorId": "2290686022",
+            "name": "Raman Goyal"
+          },
+          {
+            "authorId": "2301313582",
+            "name": "De-Chen Gao"
+          },
+          {
+            "authorId": "101302061",
+            "name": "Begum Kasap"
+          },
+          {
+            "authorId": "2408597517",
+            "name": "Bo Zhao"
+          },
+          {
+            "authorId": "2301415609",
+            "name": "Jun-Shan Zhang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20761",
+          "CorpusId": 292064054
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20761, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "e45199809bec882cef65dc735b1a8b41b106e341",
+        "title": "Agile-WAM: An Agile Tactile World Action Model for Contact-Rich Robot Control",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This paper introduces multi-horizon multimodal prediction in ABBR, an agile tactile World Action Model for contact-rich robot control, which provides supervision for visual latent at a larger temporal offset while predicting the tactile latent in the next frame to capture fine-grained contact dynamics."
+        },
+        "url": "https://www.semanticscholar.org/paper/e45199809bec882cef65dc735b1a8b41b106e341",
         "venue": "",
         "year": 2026
       }
@@ -8423,6 +9070,46 @@
           "text": "JEPA-Anything, a domain-agnostic framework based on orthogonal predictive factorization (OPF), achieves the lowest one-step and 100-step molecular errors among compared methods in all four systems and supports a common factorized predictive principle across heterogeneous worlds."
         },
         "url": "https://www.semanticscholar.org/paper/ba43a23966622ae3823e225b32d69f59f0aea695",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.20807": {
+      "cached_at": "2026-09-20T05:16:40.518707+00:00",
+      "data": {
+        "abstract": "Reinforcement learning (RL) of large language models is notoriously sensitive to small differences between training and inference engines, often referred to as the training-inference mismatch (TIM). However, completely eliminating TIM is impractical, as it would come at a major cost to rollout efficiency. In this paper, we show that the instability of RL under TIM is primarily caused by drift: a persistent bias between training and inference engines that accumulates with every training step. We derive an additive\"score centering\"correction term that stabilizes RL under TIM by canceling drift. When training models from 0.6B to 30B parameters, score centering alone matches or outperforms methods based on importance sampling under quantization, with the gap growing as the mismatch becomes more severe. Because the correction is additive, score centering also composes with importance sampling -- their composition outperforms pure importance-sampling baselines in our staleness experiments.",
+        "authors": [
+          {
+            "authorId": "40770186",
+            "name": "Martina Marek"
+          },
+          {
+            "authorId": "2066063587",
+            "name": "Max Ryabinin"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.20807",
+          "CorpusId": 292063262
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.20807, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "2a78bc6c94f49d1dca5af0a8a6e2b177fbcece28",
+        "title": "Score Centering Stabilizes Off-policy Reinforcement Learning",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "It is shown that the instability of RL under TIM is primarily caused by drift: a persistent bias between training and inference engines that accumulates with every training step, and an additive score centering term is derived that stabilizes RL under TIM by canceling drift."
+        },
+        "url": "https://www.semanticscholar.org/paper/2a78bc6c94f49d1dca5af0a8a6e2b177fbcece28",
         "venue": "",
         "year": 2026
       }

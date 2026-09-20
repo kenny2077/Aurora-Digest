@@ -2,14 +2,6 @@
   "runs": [
     {
       "blockers": [],
-      "checked_at": "2026-09-01T05:32:33.366740+00:00",
-      "clean": true,
-      "mode": "unified_digest",
-      "run_id": "run-20260901T053107Z",
-      "warnings": []
-    },
-    {
-      "blockers": [],
       "checked_at": "2026-09-02T04:58:31.993695+00:00",
       "clean": true,
       "mode": "unified_digest",
@@ -111,7 +103,15 @@
       "mode": "unified_digest",
       "run_id": "run-20260918T050323Z",
       "warnings": []
+    },
+    {
+      "blockers": [],
+      "checked_at": "2026-09-20T05:18:05.064858+00:00",
+      "clean": true,
+      "mode": "unified_digest",
+      "run_id": "run-20260920T051556Z",
+      "warnings": []
     }
   ],
-  "updated_at": "2026-09-18T05:05:49.552689+00:00"
+  "updated_at": "2026-09-20T05:18:05.064952+00:00"
 }
