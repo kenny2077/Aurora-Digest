@@ -1,5 +1,5 @@
 ---
-title: "Aurora Unified Digest"
+title: "Aurora Newsletter"
 author: "Aurora System"
 pubDatetime: 2026-08-16T10:07:31.815523+08:00
 digest_date: "2026-08-16"

@@ -1,5 +1,5 @@
 ---
-title: "Aurora Digest - June 9"
+title: "Aurora Newsletter - June 9"
 author: "Aurora System"
 pubDatetime: 2026-06-09T08:00:00+08:00
 digest_date: "2026-06-09"
@@ -7,7 +7,7 @@ featured_repo: "trpc-group/trpc-agent-go"
 featured_paper: "Agentic Retrieval-Augmented Generation"
 featured: true
 tags: ["digest", "ai", "github", "research"]
-description: "A sample Aurora Unified Digest covering tech news, GitHub repositories, and research papers."
+description: "A sample Aurora Newsletter covering tech news, GitHub repositories, and research papers."
 ---
 
 ## Tech News
