@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 def test_github_actions_workflow_publishes_site_to_gh_pages_branch() -> None:
-    workflow = Path(".github/workflows/aurora-digest.yml").read_text(encoding="utf-8")
+    workflow = Path(".github/workflows/aurora-newsletter.yml").read_text(encoding="utf-8")
 
     assert "schedule:" in workflow
     assert "workflow_dispatch:" in workflow
@@ -41,13 +41,15 @@ def test_github_actions_workflow_publishes_site_to_gh_pages_branch() -> None:
     assert "Missing required LLM secret: DEEPSEEK_API_KEY" in workflow
     assert "Restore Aurora state" in workflow
     assert "concurrency:" in workflow
-    assert "group: aurora-digest-${{ github.ref }}" in workflow
+    assert "group: aurora-newsletter-${{ github.ref }}" in workflow
     assert "cancel-in-progress: false" in workflow
     assert ".aurora/aurora_state.json" in workflow
     assert ".aurora/content/posts" in workflow
     assert ".aurora/cache" in workflow
     assert "cp -R \"$STATE_DIR/.aurora/content/posts/.\" web/src/content/posts/" in workflow
     assert "cp -R \"$STATE_DIR/.aurora/cache/.\" data/cache/" in workflow
+    assert "s/Aurora Unified Digest/Aurora Newsletter/g" in workflow
+    assert "s/Aurora Digest/Aurora Newsletter/g" in workflow
     assert "CONFIG_PATH=\"data/actions.config.json\"" in workflow
     assert "TOPIC=\"${{ github.event.inputs.topic || 'agents' }}\"" in workflow
     assert "GITHUB_TOKEN: ${{ github.token }}" in workflow
@@ -75,7 +77,7 @@ def test_github_actions_workflow_publishes_site_to_gh_pages_branch() -> None:
     assert "rm \"$PUBLISH_DIR/.nojekyll\"" not in workflow
     assert "git -C \"$PUBLISH_DIR\" push origin gh-pages" in workflow
     assert "Verify deployed Pages site" in workflow
-    assert "https://kenny2077.github.io/Aurora-Digest/" in workflow
+    assert "https://kenny2077.github.io/Aurora-Newsletter/" in workflow
     assert "astral-sh/setup-uv" not in workflow
     assert "actions/upload-artifact" not in workflow
     assert "actions/download-artifact" not in workflow

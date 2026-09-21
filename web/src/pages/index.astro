@@ -17,7 +17,7 @@ const sortedPosts = getSortedPosts(posts);
 const latestDigest = sortedPosts[0];
 const homePath = getRelativeLocaleUrl(locale, "");
 const digestArchiveUrl = getRelativeLocaleUrl(locale, "posts");
-const githubUrl = "https://github.com/kenny2077/Aurora-Digest";
+const githubUrl = "https://github.com/kenny2077/Aurora-Newsletter";
 const latestDigestUrl = latestDigest
   ? getPostUrl(latestDigest.id, latestDigest.filePath, locale)
   : digestArchiveUrl;
@@ -85,7 +85,7 @@ const workflow = [
 ---
 
 <Layout
-  title="Aurora Digest | Personal AI Learning Radar"
+  title="Aurora Newsletter | Personal AI Learning Radar"
   description="Aurora turns scattered AI news, repositories, and papers into one high-signal daily learning radar for builders."
 >
   <div class="min-h-screen bg-[#f6f6f4] text-[#090912] dark:bg-[#080810] dark:text-white">
@@ -137,7 +137,7 @@ const workflow = [
           <div class="absolute left-1/2 top-1/2 z-10 flex w-[78%] max-w-3xl -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-lg border border-black/10 bg-[#f8f8f7] shadow-2xl shadow-black/15 md:w-[68%] xl:w-[52%] dark:border-white/10 dark:bg-[#10131c]">
             <img
               src={overviewImage}
-              alt="Aurora Digest product overview"
+              alt="Aurora Newsletter product overview"
               width="1400"
               height="735"
               loading="eager"
@@ -197,7 +197,7 @@ const workflow = [
           <div class="mt-14 overflow-hidden rounded-lg border border-black/10 bg-white shadow-sm dark:border-white/10 dark:bg-[#111520]">
             <img
               src={workflowImage}
-              alt="Aurora Digest workflow"
+              alt="Aurora Newsletter workflow"
               width="1400"
               height="788"
               loading="lazy"
@@ -278,7 +278,7 @@ const workflow = [
                   Today's Digest
                 </p>
                 <h3 class="mt-4 text-3xl leading-tight font-semibold sm:text-4xl">
-                  {latestDigest?.data.title ?? "Aurora Digest"}
+                  {latestDigest?.data.title ?? "Aurora Newsletter"}
                 </h3>
                 <p class="mt-5 max-w-2xl text-lg leading-8 text-[#72717d] dark:text-white/55">
                   {
@@ -342,7 +342,7 @@ const workflow = [
           <div class="overflow-hidden rounded-lg border border-black/10 bg-white shadow-sm dark:border-white/10 dark:bg-[#111520]">
               <img
                 src={dashboardImage}
-                alt="Aurora Digest web surface"
+                alt="Aurora Newsletter web surface"
                 width="1400"
                 height="788"
                 loading="lazy"

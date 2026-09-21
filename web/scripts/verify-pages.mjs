@@ -2,7 +2,7 @@ import { access, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const EXPECTED_BASE = "/Aurora-Digest/";
+const EXPECTED_BASE = "/Aurora-Newsletter/";
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const source =
   process.argv[2] ?? path.join(scriptDirectory, "../dist/index.html");

@@ -10,7 +10,7 @@ set of files that usually answer where a behavior lives.
 - `pyproject.toml` — Python version, dependencies, pytest config, console script.
 - `data/config.example.json` — local example config.
 - `data/actions.config.json` — GitHub Actions config.
-- `.github/workflows/aurora-digest.yml` — scheduled/manual workflow and Pages publish.
+- `.github/workflows/aurora-newsletter.yml` — scheduled/manual workflow and Pages publish.
 - `docs/interests.md` — repo interests and scholar research field presets.
 - `docs/merge_design.md` — original integration design and product structure.
 - `src/aurora/cli.py` — CLI parser and command dispatch.
@@ -111,7 +111,7 @@ Read:
 1. `src/aurora/delivery/`
 2. `tests/core/test_delivery.py`
 3. `tests/core/test_github_pages.py`
-4. `.github/workflows/aurora-digest.yml`
+4. `.github/workflows/aurora-newsletter.yml`
 5. `tests/core/test_github_actions.py`
 6. README Pages/secrets sections
 

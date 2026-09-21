@@ -12,7 +12,7 @@ This guide covers setup, testing, code expectations, and pull request hygiene.
 Run commands from the repository root.
 
 ```bash
-git clone https://github.com/kenny2077/Aurora-Digest.git
+git clone https://github.com/kenny2077/Aurora-Newsletter.git
 cd Aurora
 
 rtk uv sync --dev
@@ -98,7 +98,7 @@ src/aurora/
   delivery/              # Filesystem, email, webhook, and Pages delivery
   storage/               # Config loading, snapshots, state, and cache helpers
   ai/                    # Optional LLM clients and ranking helpers
-web/                     # AstroPaper-based Aurora Digest static site
+web/                     # AstroPaper-based Aurora Newsletter static site
 tests/                   # Unit and integration-style tests
 docs/                    # User-facing docs and README assets
 ```

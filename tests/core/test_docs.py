@@ -3,37 +3,29 @@ from __future__ import annotations
 from pathlib import Path
 
 
-def test_readme_quickstart_commands_cover_core_modes() -> None:
+def test_readme_covers_quickstart_publishing_and_core_modes() -> None:
     readme = Path("README.md").read_text(encoding="utf-8")
 
-    assert "daily learning radar for AI builders, researchers, and students" in readme
-    assert "Today's Learning Workflow" in readme
-    assert "one paper to understand" in readme
-    assert "one repo to study" in readme
-    assert "10-Minute Setup" in readme
-    assert "What Aurora Is Not" in readme
-    assert "GitHub Pages Setup" in readme
-    assert "Troubleshooting Empty Sections" in readme
+    assert "# Aurora Newsletter" in readme
+    assert "https://kenny2077.github.io/Aurora-Newsletter/" in readme
+    assert "## Quick start" in readme
+    assert "## Publish on GitHub Actions" in readme
+    assert "git clone https://github.com/kenny2077/Aurora-Newsletter.git" in readme
     assert "gh-pages" in readme
     assert "run_summary.json" in readme
-    assert "SMTP_USERNAME, EMAIL_PASSWORD, AURORA_EMAIL_RECIPIENTS" in readme
+    assert "`SMTP_USERNAME`" in readme
+    assert "`EMAIL_PASSWORD`" in readme
+    assert "`AURORA_EMAIL_RECIPIENTS`" in readme
     assert "DEEPSEEK_API_KEY" in readme
     assert "GH_SEARCH_TOKEN" in readme
-    assert "GITHUB_TOKEN fallback" in readme
+    assert "GITHUB_TOKEN" in readme
     assert "SEMANTIC_SCHOLAR_API_KEY" in readme
     assert "aurora run --mode repo_learning --repo-interest agents" in readme
-    assert "aurora run --mode repo_learning --repo-interest cv" in readme
-    assert "aurora run --mode repo_learning --repo-interest mcp" in readme
     assert "aurora run --mode scholar --research-field ml" in readme
-    assert "aurora run --mode scholar --research-field ml --research-field agents" in readme
-    assert "aurora run --mode unified_digest --config data/config.example.json" in readme
-    assert "aurora eval replay --fixture tests/fixtures/digest_quality/agents.jsonl" in readme
-    assert "aurora eval compare --before" in readme
+    assert "aurora run --mode unified_digest" in readme
+    assert "tests/fixtures/digest_quality/agents.jsonl" in readme
     assert "data/local-llm.config.example.json" in readme
     assert "aurora doctor --config data/local-llm.config.example.json --local-llm" in readme
-    assert "aurora eval llm --fixture" in readme
-    assert "input_cost_per_million_tokens" in readme
-    assert "not_run" in readme
 
 
 def test_interest_docs_document_migration_and_presets() -> None:

@@ -554,7 +554,7 @@ Exit behavior:
 Use one workflow for scheduled and manual Aurora runs.
 
 ```yaml
-name: aurora-digest
+name: aurora-newsletter
 
 on:
   schedule:

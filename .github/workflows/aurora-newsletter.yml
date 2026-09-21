@@ -1,4 +1,4 @@
-name: aurora-digest
+name: aurora-newsletter
 
 on:
   schedule:
@@ -57,7 +57,7 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 concurrency:
-  group: aurora-digest-${{ github.ref }}
+  group: aurora-newsletter-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -108,6 +108,12 @@ jobs:
               cp -R "$STATE_DIR/.aurora/cache/." data/cache/
             fi
           fi
+      - name: Migrate restored newsletter branding
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          find web/src/content/posts -type f -name '*.md' -exec sed -i \
+            -e 's/Aurora Unified Digest/Aurora Newsletter/g' \
+            -e 's/Aurora Digest/Aurora Newsletter/g' {} +
       - name: Validate config
         env:
           SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
@@ -220,7 +226,7 @@ jobs:
       - name: Verify deployed Pages site
         if: ${{ github.event.inputs.dry_run != 'true' }}
         run: |
-          PAGE_URL="https://kenny2077.github.io/Aurora-Digest/"
+          PAGE_URL="https://kenny2077.github.io/Aurora-Newsletter/"
           LIVE_PAGE="$(mktemp)"
           for ATTEMPT in {1..30}; do
             CACHE_BUSTED_URL="${PAGE_URL}?deployment=${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}-${ATTEMPT}"

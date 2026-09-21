@@ -21,11 +21,11 @@ import config from "./astro-paper.config";
 
 export default defineConfig({
   site: "https://kenny2077.github.io",
-  base: "/Aurora-Digest",
+  base: "/Aurora-Newsletter",
   integrations: [
     mdx(),
     sitemap({
-      filter: page =>
+      filter: (page) =>
         config.features?.showArchives !== false || !page.endsWith("/archives/"),
     }),
   ],

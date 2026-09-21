@@ -81,7 +81,7 @@ class UnifiedDigestSummarizer:
 
     async def summarize(self, items: Sequence[SignalItem], context: StageContext) -> str:
         selected = select_items(items, self.config, selected_ids=_locked_selected_ids(context))
-        lines = ["# Aurora Unified Digest", ""]
+        lines = ["# Aurora Newsletter", ""]
         if not selected:
             lines.append("No items were available for the unified digest.")
             return "\n".join(lines)
@@ -131,7 +131,7 @@ class UnifiedDigestRenderer:
         selected = select_items(items, self.config, selected_ids=_locked_selected_ids(context))
         connections = build_connections(selected)
         html, web_html = render_unified_digest_html(
-            "Aurora Unified Digest",
+            "Aurora Newsletter",
             selected,
             context,
             connections,
@@ -139,7 +139,7 @@ class UnifiedDigestRenderer:
         )
         return RenderedDigest(
             mode="unified_digest",
-            title="Aurora Unified Digest",
+            title="Aurora Newsletter",
             markdown=summary,
             html=html,
             metadata={

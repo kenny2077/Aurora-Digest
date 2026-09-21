@@ -1,6 +1,6 @@
-# Aurora Digest Web
+# Aurora Newsletter Web
 
-AstroPaper-based static frontend for Aurora Digest.
+AstroPaper-based static frontend for Aurora Newsletter.
 
 ## Commands
 

@@ -1995,7 +1995,7 @@ def test_unified_summary_starts_with_tech_news_section_only() -> None:
         )
     )
 
-    assert summary.startswith("# Aurora Unified Digest\n\n## Tech News")
+    assert summary.startswith("# Aurora Newsletter\n\n## Tech News")
     assert "## Today's Learning Path" not in summary
     assert "### Paper to Understand" not in summary
     assert "### Repo to Study" not in summary

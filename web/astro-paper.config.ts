@@ -2,8 +2,8 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://kenny2077.github.io/Aurora-Digest/",
-    title: "Aurora Digest",
+    url: "https://kenny2077.github.io/Aurora-Newsletter/",
+    title: "Aurora Newsletter",
     description:
       "High-signal daily curation of tech news, GitHub repositories, and research papers.",
     author: "Aurora System",
@@ -28,13 +28,15 @@ export default defineAstroPaperConfig({
     },
     search: "pagefind",
   },
-  socials: [{ name: "github", url: "https://github.com/kenny2077/Aurora-Digest" }],
+  socials: [
+    { name: "github", url: "https://github.com/kenny2077/Aurora-Newsletter" },
+  ],
   shareLinks: [
     { name: "whatsapp", url: "https://wa.me/?text=" },
     { name: "facebook", url: "https://www.facebook.com/sharer.php?u=" },
-    { name: "x",        url: "https://x.com/intent/post?url=" },
+    { name: "x", url: "https://x.com/intent/post?url=" },
     { name: "telegram", url: "https://t.me/share/url?url=" },
     { name: "pinterest", url: "https://pinterest.com/pin/create/button/?url=" },
-    { name: "mail",     url: "mailto:?subject=See%20this%20post&body=" },
+    { name: "mail", url: "mailto:?subject=See%20this%20post&body=" },
   ],
 });

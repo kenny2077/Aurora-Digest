@@ -26,7 +26,7 @@
 - Modify: `tests/core/test_github_actions.py`
 
 **Interfaces:**
-- Consumes: `.github/workflows/aurora-digest.yml`
+- Consumes: `.github/workflows/aurora-newsletter.yml`
 - Produces: assertions that dependency audits exist only in `.github/workflows/dependency-audit.yml`
 
 - [ ] **Step 1: Write the failing test**
@@ -45,7 +45,7 @@ The test and workflow configuration are one atomic reliability fix.
 ### Task 2: Separate publishing from vulnerability monitoring
 
 **Files:**
-- Modify: `.github/workflows/aurora-digest.yml`
+- Modify: `.github/workflows/aurora-newsletter.yml`
 - Create: `.github/workflows/dependency-audit.yml`
 - Create: `.github/dependabot.yml`
 
@@ -119,4 +119,4 @@ Commit only the regression test, workflows, Dependabot config, and npm dependenc
 
 - [ ] **Step 4: Run the safe GitHub dry run**
 
-Dispatch `aurora-digest.yml` with `dry_run=true`, wait for completion, and inspect any failure before declaring success.
+Dispatch `aurora-newsletter.yml` with `dry_run=true`, wait for completion, and inspect any failure before declaring success.

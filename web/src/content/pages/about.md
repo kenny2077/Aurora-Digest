@@ -1,12 +1,12 @@
 ---
 title: "About"
-description: "About Aurora Digest"
+description: "About Aurora Newsletter"
 ---
 
-# About Aurora Digest
+# About Aurora Newsletter
 
-Aurora Digest is the web archive for Aurora Unified Digest, an automated daily
-curation system for developers who want a compact view of tech news, GitHub
+Aurora Newsletter is the web archive for Aurora's automated daily curation
+system, built for developers who want a compact view of tech news, GitHub
 repositories, and research papers.
 
 The visible digest stays intentionally small: five tech news items, three
