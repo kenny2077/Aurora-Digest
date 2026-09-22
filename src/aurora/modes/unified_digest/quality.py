@@ -173,6 +173,10 @@ def public_copy_quality(item: SignalItem) -> PublicCopyQuality:
 
 def audit_rendered_public_digest(markdown: str, web_html: str = "") -> PublicDigestAudit:
     """Validate rendered public Markdown/HTML before delivery."""
+    # Source titles are linked in both renderings. They are source-provided
+    # names, not generated copy or internal labels.
+    markdown = re.sub(r"\[[^\]]+\]\([^\n)]*\)", "", markdown)
+    web_html = re.sub(r"<a\b[^>]*>.*?</a>", "", web_html, flags=re.IGNORECASE | re.DOTALL)
     text = "\n".join(part for part in (markdown, web_html) if part)
     normalized = " ".join(text.split())
     reasons: list[str] = []

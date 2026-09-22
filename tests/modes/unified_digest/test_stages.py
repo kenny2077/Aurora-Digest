@@ -930,6 +930,32 @@ def test_rendered_public_digest_audit_blocks_public_slop() -> None:
     }
 
 
+def test_rendered_public_digest_audit_accepts_source_title_with_evidence_prefix() -> None:
+    audit = audit_rendered_public_digest(
+        "# Aurora Newsletter\n\n## Tech News\n\n"
+        "1. [Evidence: Agents improve code review](https://example.com/story)\n"
+        "   - Summary: A study compares how agents review code changes.\n",
+        '<section><article><h3><a href="https://example.com/story">'
+        "Evidence: Agents improve code review</a></h3>"
+        "<p>A study compares how agents review code changes.</p></article></section>",
+    )
+
+    assert audit.ok
+
+
+def test_rendered_public_digest_audit_blocks_evidence_label_in_summary() -> None:
+    audit = audit_rendered_public_digest(
+        "# Aurora Newsletter\n\n## Tech News\n\n"
+        "1. [Agent evaluation update](https://example.com/story)\n"
+        "   - Summary: Evidence: A new benchmark compares agent planning methods.\n",
+        '<section><article><h3><a href="https://example.com/story">'
+        "Agent evaluation update</a></h3>"
+        "<p>Evidence: A new benchmark compares agent planning methods.</p></article></section>",
+    )
+
+    assert "visible_evidence_block" in audit.reasons
+
+
 def test_public_copy_quality_uses_the_rendered_news_fallback() -> None:
     item = _item(
         "news:release",
