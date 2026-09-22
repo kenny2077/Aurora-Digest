@@ -9178,6 +9178,210 @@
         "year": 2026
       }
     },
+    "arxiv:2609.24787": {
+      "cached_at": "2026-09-22T18:45:10.431695+00:00",
+      "data": {
+        "abstract": "Forest inventories increasingly rely on artificial intelligence (AI) models to derive forest attributes from large-scale 3D point clouds. Current models are typically specialized to a single task, sensor, and forest type, making adaptation expensive in terms of annotations, computation, and expertise. We ask whether a single pretrained model can instead learn transferable representations across diverse forest inventory settings. Inspired by recent developments in language modelling and computer vision, we take a step toward a foundation model (FM) for 3D forestry. Using LitePT as backbone, we first establish a strong supervised baseline that sets a new state of the art on forest semantic and instance segmentation, tree species classification, and age regression benchmarks. We then curate a large-scale unlabelled corpus spanning airborne, UAV, and mobile laser scanning across diverse forest ecosystems, and pretrain the same backbone using self-supervised learning. We systematically evaluate representation learning strategies by comparing training from scratch, supervised pretraining, and self-supervised pretraining across four representative forestry tasks, under varying annotation budgets. Compared with training from scratch, self-supervised pretraining accelerates model convergence and consistently improves performance when annotations are scarce. Compared with task-specific supervised pretraining, self-supervised pretraining yields more transferable representations across downstream forestry tasks. These findings identify the practical regime in which pretrained representations are most valuable and suggest that instance discrimination, rather than forest semantics, is the main remaining obstacle to a general-purpose 3D forest foundation model. Code and models are available at: https://github.com/prs-eth/ForPT.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Yuan-Wen Yue"
+          },
+          {
+            "authorId": "2407303409",
+            "name": "Stefano Puliti"
+          },
+          {
+            "authorId": "47018294",
+            "name": "Damien Robert"
+          },
+          {
+            "authorId": "2349396293",
+            "name": "Atakan Topaloglu"
+          },
+          {
+            "authorId": "2276433499",
+            "name": "Bin-Bin Xiang"
+          },
+          {
+            "authorId": "2237792445",
+            "name": "Maciej Wielgosz"
+          },
+          {
+            "authorId": "2237921761",
+            "name": "J. D. Wegner"
+          },
+          {
+            "authorId": "48187596",
+            "name": "R. Astrup"
+          },
+          {
+            "authorId": "2362441796",
+            "name": "Christian Rupprecht"
+          },
+          {
+            "authorId": "2276434354",
+            "name": "Konrad Schindler"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.24787",
+          "CorpusId": 292218784
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.24787, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "096a55b95f12f776751da3c761fb9ec2ed4ae5fe",
+        "title": "Toward a foundation model for forest point clouds",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "These findings identify the practical regime in which pretrained representations are most valuable and suggest that instance discrimination, rather than forest semantics, is the main remaining obstacle to a general-purpose 3D forest foundation model."
+        },
+        "url": "https://www.semanticscholar.org/paper/096a55b95f12f776751da3c761fb9ec2ed4ae5fe",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.24799": {
+      "cached_at": "2026-09-22T18:45:00.971153+00:00",
+      "data": {
+        "abstract": "Post-training quantization (PTQ) enables efficient deployment of large language models, and PTQ methods are usually optimized and evaluated with generic reconstruction, perplexity, or answer accuracy. But in explanation-critical domains, preserving only the final answer may be insufficient, since users may also inspect generated rationales to judge whether a prediction is trustworthy. We study this issue in medical multiple-choice question answering, where rationales should provide evidence that supports the selected answer. We propose an explanation-aware objective for transformation-based PTQ. Our method builds an offline faithfulness cache from full-precision teacher rationales and uses it during optimization to preserve answer-supporting evidence tokens and evidence-conditioned answer behavior. We instantiate it on OSTQuant under W4A4KV4 quantization and evaluate four 7B--8B medical and instruction-tuned LLMs on MedExQA, MedExpQA, and ChallengeClinicalQA. While a same-calibration OSTQuant baseline preserves task accuracy, it can substantially weaken answer-supporting rationales. Our objective is to preserve the full-precision model's answer-supporting behavior rather than improve gold-label accuracy, and our method better preserves the full-precision model's answer behavior and rationale-to-answer support. These results suggest that PTQ for explanation-critical settings should evaluate preservation of answer-supporting evidence, not only answer accuracy. Code and evaluation scripts are available at https://github.com/dut0817/EAQuant.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Yeji Kim"
+          },
+          {
+            "authorId": null,
+            "name": "Mi-Young Kim"
+          },
+          {
+            "authorId": "2272672107",
+            "name": "Randy Goebel"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.24799",
+          "CorpusId": 292219319
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.24799, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "c6bf3dbdb34e45a128d3d9001a1b37d4be95a71f",
+        "title": "When Quantization Preserves Accuracy but Not Evidence: Explanation-Aware Post-Training Quantization for Medical LLMs",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "The objective is to preserve the full-precision model's answer-supporting behavior rather than improve gold-label accuracy, and the method better preserves the full-precision model's answer behavior and rationale-to-answer support."
+        },
+        "url": "https://www.semanticscholar.org/paper/c6bf3dbdb34e45a128d3d9001a1b37d4be95a71f",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.24972": {
+      "cached_at": "2026-09-22T18:44:58.519761+00:00",
+      "data": {
+        "abstract": "An LLM agent's capability is largely magnified by its harness, namely the prompts, control flow, tooling, memory, and context management surrounding the frozen backbone model. Recent methods increasingly automate this process by iteratively proposing and selecting component-wise edits of an agent harness, practically establishing a form of recursive self-improvement (RSI) at the agent-system level. However, such recursive evolution may overfit by memorizing the training tasks, showing large in-distribution gains that shrink or even vanish on out-of-distribution benchmarks. We introduce Regularized Recursive Self-Improvement of Agent Harnesses (RRSI), which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection. The proposer operates with a temporally annealed budget, limiting how many edits a candidate can bundle, and it encourages unexplored trajectories based on evolution history. The selector is equipped with a critic and a pruner: the critic screens benchmark-specific proposals, while the pruner, removes changes that are too small, too expensive, or no longer useful. Together these constraints favor reusable agent mechanisms over benchmark-specific ones or even noises. Across eight benchmarks spanning coding, agentic workspace and engineering design tasks, RRSI gains up to 14.1 points on the split it evolves against and up to 4.7 points on the five out-of-distribution benchmarks, while producing a harness that runs on 30% fewer policy tokens than the unregularized evolution. Code is available at https://github.com/google-research/rrsi and project page is https://regularized-rsi.com/.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Peng Xia"
+          },
+          {
+            "authorId": null,
+            "name": "Ru-Jun Han"
+          },
+          {
+            "authorId": null,
+            "name": "Zi-Feng Wang"
+          },
+          {
+            "authorId": null,
+            "name": "Yan-Fei Chen"
+          },
+          {
+            "authorId": null,
+            "name": "Yu-Fan Zhang"
+          },
+          {
+            "authorId": null,
+            "name": "Yoonho Lee"
+          },
+          {
+            "authorId": null,
+            "name": "Cheng-Song Huang"
+          },
+          {
+            "authorId": null,
+            "name": "Han Yu"
+          },
+          {
+            "authorId": null,
+            "name": "Zhongying CuiZhu"
+          },
+          {
+            "authorId": null,
+            "name": "Yifei Ming"
+          },
+          {
+            "authorId": "2333859426",
+            "name": "Hua-Xiu Yao"
+          },
+          {
+            "authorId": null,
+            "name": "Burak Gokturk"
+          },
+          {
+            "authorId": null,
+            "name": "Tomas Pfister"
+          },
+          {
+            "authorId": null,
+            "name": "Chen-Yu Lee"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.24972",
+          "CorpusId": 292220182
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.24972, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "9292cd5b7b8679fd5d0a437bf3785619a745b03c",
+        "title": "RRSI: Regularized Recursive Self-Improvement of Agent Harnesses",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "Regularized Recursive Self-Improvement of Agent Harnesses (RRSI) is introduced, which incorporates the principles of regularizations into harness self-improvement by constraining the evolution candidate proposal and selection."
+        },
+        "url": "https://www.semanticscholar.org/paper/9292cd5b7b8679fd5d0a437bf3785619a745b03c",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
