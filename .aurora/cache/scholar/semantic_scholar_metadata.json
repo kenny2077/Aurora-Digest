@@ -9382,6 +9382,51 @@
         "year": 2026
       }
     },
+    "arxiv:2609.25498": {
+      "cached_at": "2026-09-25T05:13:44.368467+00:00",
+      "data": {
+        "abstract": "Deploying Large Language Models for runtime operational triage incurs prohibitive latency (>100-500 ms), high VRAM requirements (>4-8 GB), and excessive energy dissipation. Extending Mandelbrot Fractal Neural Synthesis (Dagli et al., 2026), this paper presents the Universal Fractal Natural Language Decision Map, realized via the werr machine-native edge reflex runtime and the production answerr platform (https://answerr.me). Operating entirely without stored weight tensors (0 Bytes VRAM), the engine synthesizes deterministic decisions---noul (Boolean), choice (categorical), and score (ordinal)---by dynamically modulating 24-byte coordinate seeds along the chaotic boundary of the Mandelbrot set and evaluating 4-quadrant escape dynamics. Drawing inspiration from biological System-One reflex arcs, the engine introduces: (i) an Auto-Seed Router with domain projector Phi_D yielding a +28.8% accuracy gain over linear baselines; (ii) an Information-Theoretic Acoustic Damping Filter grounded in token entropy and phonetic spectral density that insulates against prompt injections (0.0% empirical bypass; 95% Wilson CI: [0.0%, 30.8%]) while pruning escape iterations by 45.8% (accelerating throughput 2.5x to 3.31 ms latency); and (iii) an Organic Dynamic Calibration framework using O(1) Exponential Moving Average (EMA, alpha=0.03) and quadrant phase rotation to eliminate positional bias. Benchmarked on bare-metal infrastructure (api.answerr.me:4431) across 1,150+ verified decisions (3,200+ questions) and ranked World #1 on the independent JevBench suite (81.65%), the framework achieves 92.6% macro-accuracy (95% CI: [90.8%, 94.1%]) with 7.08 ms median CPU latency. We provide an OpenAI-compatible API (/v1/chat/completions) and demonstrate feasibility on microcontrollers and 32-byte EVM smart contracts.",
+        "authors": [
+          {
+            "authorId": "2206735",
+            "name": "V. Da\u011fl\u0131"
+          },
+          {
+            "authorId": "1580590933",
+            "name": "Zerrin Dagli"
+          },
+          {
+            "authorId": "2050674878",
+            "name": "Da\u011fhan Da\u011fl\u0131"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.25498",
+          "CorpusId": 292224099,
+          "DOI": "10.5281/zenodo.22867426"
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.25498, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "e0f50bc37c56cdb7f0bcf264127953d6b754e2c2",
+        "title": "Universal Fractal Natural Language Decision Map: Real-Time Edge Triage Across Heterogeneous Domains",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "The Universal Fractal Natural Language Decision Map is presented, realized via the werr machine-native edge reflex runtime and the production answerr platform and achieves 92.6% macro-accuracy."
+        },
+        "url": "https://www.semanticscholar.org/paper/e0f50bc37c56cdb7f0bcf264127953d6b754e2c2",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
