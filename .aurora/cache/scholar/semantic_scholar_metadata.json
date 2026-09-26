@@ -9427,6 +9427,577 @@
         "year": 2026
       }
     },
+    "arxiv:2609.28587": {
+      "cached_at": "2026-09-26T05:19:01.039668+00:00",
+      "data": {
+        "abstract": "Large language models can interpret natural lan- guage, yet robust decisions remain challenging. Jev-like models expose structured choices, but these interfaces do not directly provide numeri- cal values at a requested precision. We propose NUMERICJEV, a training-free numerical decod- ing algorithm that enables numerical output from any LLM with a Jev-like structured-choice in- terface. Surprisingly, on our arithmetic bench- mark, it outperforms direct selection from a can- didate list containing the correct answer by 2.93 percentage points (Figure 1). Our motivation comes from the observation that numerical range selection is itself a decision problem that Jev- like LLMs can address. NUMERICJEV recur- sively refines a range through a multiway deci- sion tree while retaining the original question in context, without parameter updates or hidden- state access. On a 100-value grid, a ten-way tree requires only two decision rounds. Range- normalized MAE is 1.84% versus 5.18% for di- rect choice. A separate three-date historical- index study yields 4.58% mean relative recall er- ror and 0% readout error when the value is sup- plied. Code is available at https://github. com/Bring-AI/jev-numeric.",
+        "authors": [
+          {
+            "authorId": "2193630738",
+            "name": "Wei-Wei Ye"
+          },
+          {
+            "authorId": null,
+            "name": "Hang-Chen Liu"
+          },
+          {
+            "authorId": "2299193401",
+            "name": "Ren-He Jiang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.28587",
+          "CorpusId": 292282503
+        },
+        "fieldsOfStudy": [
+          "Mathematics",
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.28587, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "9894293dd38824f84f449a28f9768de9d11badbd",
+        "title": "NumericJev: Jev-like LLM Numerical Decoding with Multiway Decision Trees",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "NUMERICJEV, a training-free numerical decod- ing algorithm that enables numerical output from any LLM with a Jev-like structured-choice in- terface, outperforms direct selection from a can- didate list containing the correct answer by 2.93 percentage points on the arithmetic bench- mark."
+        },
+        "url": "https://www.semanticscholar.org/paper/9894293dd38824f84f449a28f9768de9d11badbd",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.28611": {
+      "cached_at": "2026-09-26T05:18:54.699012+00:00",
+      "data": {
+        "abstract": "We study global convergence guarantees of third-order Langevin dynamics for non-convex optimization via simulated annealing with fixed friction and decreasing noise. An explicit three-block distorted entropy transfers dissipation from the noisy auxiliary variable to the full state. Under dissipativity, regularity, and low-temperature functional-inequality assumptions, logarithmic cooling drives the objective values to the global minimum in probability at the barrier-controlled kinetic rate. For the exact-force-integral and midpoint three-stage discretizations, polynomially decreasing steps preserve this rate on the physical time scale. The cubic local endpoint estimate gives a less restrictive sufficient step-size condition than the available frozen-force kinetic result. A comparison with the one-gradient UBU integrator shows how its centered stochastic local error leads, under the same strong-coupling analysis, to a smaller sufficient iteration exponent. Numerical experiments are conducted to illustrate our theory. For a double well objective, third-order Langevin terminal-success point estimates are higher than UBU at both a common horizon and an equal gradient budget. For a high-dimensional nonconvex neural-network objective using synthetic data, independently tuned UBU and third-order Langevin schemes both outperform overdamped Langevin dynamics; the third-order Langevin point estimate is higher. For the same neural-network objective on real data, we show the same point-estimate ordering for best-basin probability and post-quench test accuracy. Numerical code and associated experiment results are publicly available at https://github.com/gagawjbytw/simulated-annealing-third-order-langevin.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Ying-Li Wang"
+          },
+          {
+            "authorId": null,
+            "name": "Kelvin Shuangjian Zhang"
+          },
+          {
+            "authorId": null,
+            "name": "Ling-Jiong Zhu"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.28611",
+          "CorpusId": 292282630
+        },
+        "fieldsOfStudy": [
+          "Mathematics",
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.28611, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "1b2cac226de260a9125996a2118bb0828feccc60",
+        "title": "Global Convergence of Third-Order Langevin Dynamics for Non-Convex Optimization via Simulated Annealing",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work studies global convergence guarantees of third-order Langevin dynamics for non-convex optimization via simulated annealing with fixed friction and decreasing noise via simulated annealing with fixed friction and decreasing noise."
+        },
+        "url": "https://www.semanticscholar.org/paper/1b2cac226de260a9125996a2118bb0828feccc60",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.28963": {
+      "cached_at": "2026-09-26T05:18:15.889562+00:00",
+      "data": {
+        "abstract": "Group-based reinforcement learning (RL) methods, such as GRPO and its variants, have become a leading paradigm for training reasoning and agentic large language models (LLMs). While their group-normalized advantage estimation is reliable at the response level, it becomes systematically biased at the step level, since coarse-grained trajectory-level advantages are hard to accurately reflect the contribution of individual steps (i.e, failed trajectories may contain valuable steps). Revisiting the foundational RL definition, we notice that GRPO's success on single-turn tasks stems from its advantage estimation strategy, which adheres to the basic definition: the mean reward of multiple actions sampled from the same state constitutes a credible state-value estimate. Extending the faithful estimation to step-level would in principle demand sampling multiple actions from each intermediate state, which is too costly on a per-state basis. To mitigate this issue, we propose a Graph-based Faithful sTep-level credit-assignment framework (GRAFT) that grafts all rollout trajectories into a trajectory graph, recovering node state-values via Bellman iteration on the graph, and assigning credit to each edge by the node value difference. Theoretically, the estimated step-level advantage faithfully adheres to the basic advantage definition in RL. To further ensure the reliability of step-level advantage estimation, we further propose Graph GAE, which extends GAE to the trajectory graph for reducing the impact of state-value estimation bias. Experiments across a range of multi-turn agentic benchmarks show consistent gains over GRPO and superior performance compared to recent agentic RL algorithms. Code will be available at https://github.com/xcyao00/GRAFT.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Xin-Cheng Yao"
+          },
+          {
+            "authorId": "2268469",
+            "name": "Haobo Fu"
+          },
+          {
+            "authorId": null,
+            "name": "Wei-Ming Liu"
+          },
+          {
+            "authorId": null,
+            "name": "Chong-Yang Zhang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.28963",
+          "CorpusId": 292282190
+        },
+        "fieldsOfStudy": [
+          "Computer Science",
+          "Mathematics"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.28963, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "657972c81764e1e0a33487db41bf7ba047ff6a48",
+        "title": "Back to the Definition: Estimating Step-Level Advantages via Trajectory Graphs for Agentic Reinforcement Learning",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "A Graph-based Faithful sTep-level credit-assignment framework (GRAFT) that grafts all rollout trajectories into a trajectory graph, recovering node state-values via Bellman iteration on the graph, and assigning credit to each edge by the node value difference is proposed."
+        },
+        "url": "https://www.semanticscholar.org/paper/657972c81764e1e0a33487db41bf7ba047ff6a48",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.29913": {
+      "cached_at": "2026-09-26T05:19:05.311927+00:00",
+      "data": {
+        "abstract": "Many-shot in-context learning (ICL) enables large language models (LLMs) to adapt to complex tasks by conditioning on thousands of demonstration examples, but this paradigm shifts the inference efficiency bottleneck to the key-value (KV) cache memory. Due to the linear scaling behavior of the KV cache, storing these intermediate tensors has become a paramount challenge for both online serving and on-device deployment. To address this issue, we propose a novel compression framework, termed MILO, that exploits the low-rank redundancy inherent in many-shot contexts. Specifically, MILO features a block-wise low-rank compression strategy that compresses the KV cache at the block granularity, where each block contains multiple many-shot examples. Furthermore, to handle the heterogeneous context density across different blocks, MILO dynamically allocates rank budgets based on the information entropy, preserving the fidelity of critical blocks while aggressively compressing redundant ones. Experimental results on Qwen2.5 models demonstrate that our method achieves up to 50% reduction in KV cache memory and 1.8x throughput improvement, with negligible performance degradation on classification and reasoning benchmarks, significantly outperforming prior baselines.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "You-Peng Zhao"
+          },
+          {
+            "authorId": "2503709270",
+            "name": "Tian Tan"
+          },
+          {
+            "authorId": "2325464488",
+            "name": "Li-Qian Peng"
+          },
+          {
+            "authorId": null,
+            "name": "Jun Wang"
+          },
+          {
+            "authorId": "2304454410",
+            "name": "Alec Go"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.29913",
+          "CorpusId": 292287089
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.29913, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "e841dbae23749051b146f3bcaefcfa814054adb9",
+        "title": "MILO: Efficient Many-shot In-Context Learning with Block-wise Low-rank Compression",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "A novel compression framework, termed MILO, that exploits the low-rank redundancy inherent in many-shot contexts and dynamically allocates rank budgets based on the information entropy, preserving the fidelity of critical blocks while aggressively compressing redundant ones."
+        },
+        "url": "https://www.semanticscholar.org/paper/e841dbae23749051b146f3bcaefcfa814054adb9",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.29934": {
+      "cached_at": "2026-09-26T05:18:43.449952+00:00",
+      "data": {
+        "abstract": "Does progress on spatial reasoning benchmarks translate into better navigation? Existing benchmarks test isolated inferences from images or videos, with little connection to downstream navigation. Our analysis reveals a gap between benchmark-oriented spatial specialization and navigation performance, and shows how aligning spatial supervision with navigation goals, phases, and decision learning improves navigation. Guided by these findings, we build \\textsc{Spatial-Nav-100K} and fine-tune in two stages, \\textit{i.e.} first learning a shared spatial-navigation foundation, and then specializing each phase with the abilities it relies on. We further introduce Spatial-NPD, where a teacher conditioned on spatial priors produces grounded action preferences and distills them into a student policy, so no explicit spatial reasoning is needed at inference. With 45 A100 GPU-hours of policy training, our 8B model reaches SR/SPL of 77.4/35.4 on HM3D-v0.2, 60.2/30.5 on HM3D-v0.1, and 47.9/20.6 on train-unseen MP3D. It outperforms several systems that rely on closed-source models or thousands of GPU-hours of training, at 148 ms per action step. All code and datasets will be publicly available at https://github.com/ylwhxht/Spatial-Nav.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Xun Huang"
+          },
+          {
+            "authorId": null,
+            "name": "Shi-Jia Zhao"
+          },
+          {
+            "authorId": "2336093460",
+            "name": "Rong Qu"
+          },
+          {
+            "authorId": null,
+            "name": "Jia-Yuan Li"
+          },
+          {
+            "authorId": null,
+            "name": "Xin Lu"
+          },
+          {
+            "authorId": null,
+            "name": "Wei-Xin Li"
+          },
+          {
+            "authorId": "2392630346",
+            "name": "Cheng-Lu Wen"
+          },
+          {
+            "authorId": null,
+            "name": "Cheng Wang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.29934",
+          "CorpusId": 292287273
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.29934, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "e8a00422d670462618ecb01acf9a60ba55f993f7",
+        "title": "Beyond Spatial Benchmarks: From Spatial Reasoning to Navigation",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This analysis reveals a gap between benchmark-oriented spatial specialization and navigation performance, and shows how aligning spatial supervision with navigation goals, phases, and decision learning improves navigation."
+        },
+        "url": "https://www.semanticscholar.org/paper/e8a00422d670462618ecb01acf9a60ba55f993f7",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.30054": {
+      "cached_at": "2026-09-26T05:18:17.978064+00:00",
+      "data": {
+        "abstract": "Improving the scientific coding capabilities of large language models (LLMs) requires high-quality training data. However, such data remain scarce because manually authoring realistic problems is costly and time-consuming, while systematically covering diverse scientific domains and algorithmic combinations remains challenging. To address this, we introduce SciWalker, a framework for synthesizing scientific coding problems through operator-chain sampling and execution feedback. The framework combines scientific library interfaces with operation modes to instantiate operators, organizes them into operator graphs, and samples operator chains as computational workflow cues. Guided by these cues, we adopt LLMs to generate scientifically grounded problem statements, reference solutions, and tests, with failed generations iteratively repaired using execution feedback. By combining structured workflow composition with verification and quality review, SciWalker enables scalable task generation while promoting scientific grounding, computational diversity, and executability. Using this framework, we construct 8,178 high-quality problems spanning 5 scientific domains and 32 subdomains. To evaluate their training utility, we conduct reinforcement learning on Qwen3.5-9B using the GSPO algorithm. This training improves SciCode subproblem accuracy by 9.9 percentage points, from 29.3% to 39.2%, with gains across scientific code generation, code repair, and reasoning benchmarks. The code for SciWalker is available at https://github.com/lichenx1/SciWalker.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Chen-Xi Li"
+          },
+          {
+            "authorId": "2284863707",
+            "name": "Wen-Xuan Zeng"
+          },
+          {
+            "authorId": null,
+            "name": "Yun Luo"
+          },
+          {
+            "authorId": null,
+            "name": "Fang-Chen Yu"
+          },
+          {
+            "authorId": "2364746114",
+            "name": "Peng Ye"
+          },
+          {
+            "authorId": null,
+            "name": "Yu Cheng"
+          },
+          {
+            "authorId": null,
+            "name": "Jun Zhang"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.30054",
+          "CorpusId": 292287949
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.30054, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "43aa5b6731f7f251d23e4e7a6c2f7a595f9f9416",
+        "title": "SciWalker: Synthesizing Scientific Coding Problems with Operator Graphs and Execution Feedback",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "SciWalker, a framework for synthesizing scientific coding problems through operator-chain sampling and execution feedback, enables scalable task generation while promoting scientific grounding, computational diversity, and executability."
+        },
+        "url": "https://www.semanticscholar.org/paper/43aa5b6731f7f251d23e4e7a6c2f7a595f9f9416",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.30150": {
+      "cached_at": "2026-09-26T05:19:03.183834+00:00",
+      "data": {
+        "abstract": "Modern infrastructure asset management constitutes a complex sequential decision-making problem, characterized by long planning horizons and system-level interactions, such as spatial deterioration correlations and economies of scale. While deep reinforcement learning has shown promise in optimizing maintenance policies, scaling to real-world networks remains challenging. Centralized approaches become computationally intractable in large-scale systems, whereas decentralized approaches often fail to capture essential coordination mechanisms. To address these challenges, we propose a graph-based framework that integrates accurate environment modeling with scalable decision support. First, we employ a hierarchical Bayesian model leveraging a Gaussian Process on Graph kernel to infer a realistic, spatially correlated networked environment of railway maintenance planning from real-world data provided by the Swiss Federal Railways. Second, we introduce a topology-aware Multi-Agent Reinforcement Learning (MARL) framework by integrating graph neural networks and graph Transformers to optimize network-level policies. A central contribution of this work is the demonstration of scalability through zero-shot transfer learning: graph-based agents, trained only on small network portions, are successfully deployed in a zero-shot manner on large-scale unseen networks without any retraining. Numerical results indicate that the proposed method significantly outperforms optimized heuristics and standard MARL baselines, reducing computational training time while maintaining superior performance on large-scale networks.",
+        "authors": [
+          {
+            "authorId": "2134901070",
+            "name": "G. Arcieri"
+          },
+          {
+            "authorId": "2381833441",
+            "name": "Gregory Duth\u00e9"
+          },
+          {
+            "authorId": "2465353891",
+            "name": "Christopher P. Muller"
+          },
+          {
+            "authorId": "33429764",
+            "name": "K. Papakonstantinou"
+          },
+          {
+            "authorId": "2274485847",
+            "name": "Daniel Straub"
+          },
+          {
+            "authorId": "2269089844",
+            "name": "Eleni N. Chatzi"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.30150",
+          "CorpusId": 292287019
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.30150, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "0946138b81dbdf13f56401f8dc9f25ed57bc0e03",
+        "title": "Graph-Based Inference and Topology-Aware Multi-Agent Reinforcement Learning for Large-Scale Railway Network Management",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "A graph-based framework that integrates accurate environment modeling with scalable decision support is proposed that significantly outperforms optimized heuristics and standard MARL baselines, reducing computational training time while maintaining superior performance on large-scale networks."
+        },
+        "url": "https://www.semanticscholar.org/paper/0946138b81dbdf13f56401f8dc9f25ed57bc0e03",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.30192": {
+      "cached_at": "2026-09-26T05:18:27.162725+00:00",
+      "data": {
+        "abstract": "Long-horizon reasoning remains a central challenge for large language models (LLMs) under sparse-reward regimes. We argue that this brittleness arises from two biases induced by complex reasoning spaces: an exploration bias, where models are drawn toward locally plausible but structurally unstable branches, and a compounding bias, where small local deviations accumulate across depth and suppress rare rewards. We introduce Symbolic Closure Analysis (SCA) as a theoretical lens characterizing how branching structures and sparse rewards induce these biases in long-horizon reasoning with local admissibility, and as a design principle for structural priors in less formal reasoning tasks. Motivated by this analysis, we propose SAGE (Structural Admissibility-Guided Exploration), a unified framework that injects structural guidance to alleviate exploration bias and compounding bias in long-horizon reasoning. SAGE combines two complementary structural guidance: algebraic sparsification, which projects locally admissible candidates onto operator-indexed algebraic subspaces to suppress spurious branching and mitigate exploration bias, and hyperbolic structural guidance, which embeds reasoning states into a negatively curved space to provide dense depth-wise signals and mitigate compounding bias. Across 12 benchmarks and 7 model families, SAGE outperforms competitive baselines. In particular, SAGE achieves up to an 8-fold improvement on the Andrews-Curtis problem, an open real-world long-horizon task. Code is available at: https://github.com/Susan571/SAGE-NeurIPS2026.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Xin-Yue Zeng"
+          },
+          {
+            "authorId": null,
+            "name": "Jia-Wei Zhang"
+          },
+          {
+            "authorId": null,
+            "name": "Yu-Jun Yan"
+          },
+          {
+            "authorId": null,
+            "name": "Da-Wei Zhou"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.30192",
+          "CorpusId": 292287213
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.30192, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "e43af04541437c73d80e25c90d8dc5d31505544c",
+        "title": "SAGE: Mitigating Long-Horizon Reasoning Biases via Topological Guidance",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work proposes SAGE (Structural Admissibility-Guided Exploration), a unified framework that injects structural guidance to alleviate exploration bias and compounding bias in long-horizon reasoning and achieves up to an 8-fold improvement on the Andrews-Curtis problem."
+        },
+        "url": "https://www.semanticscholar.org/paper/e43af04541437c73d80e25c90d8dc5d31505544c",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.30227": {
+      "cached_at": "2026-09-26T05:18:56.789639+00:00",
+      "data": {
+        "abstract": "Online misinformation increasingly appears in spoken formats such as news clips, podcasts, interviews, political speeches, and social media videos, creating a need for fact-checking systems that can verify claims directly from speech. We introduce VeriSpeak, a probe benchmark for studying speech-based fact verification in Large Audio Language Models (LALMs). VeriSpeak contains 3,879 spoken claims spanning temporal, geographical, and relational facts, with balanced true and false labels. The benchmark is designed to examine whether factual verification ability transfers from text to speech, and whether retrieval-augmented LALMs can use textual evidence to correctly support or refute spoken claims. Our experiments reveal a consistent text-speech modality gap: LALMs that verify written claims reliably often fail on the same claims when spoken. Moreover, retrieval alone provides limited gains because models frequently conflate retrieved evidence with the spoken claim. In contrast, retrieval combined with explicit reasoning improves claim-evidence comparison, with a thinking-tuned LALM reaching 86.1% accuracy. VeriSpeak highlights that effective speech misinformation detection requires not only speech understanding, but also grounded reasoning over retrieved evidence. The dataset is publicly available via Hugging Face at https://huggingface.co/datasets/abhiram4572/VeriSpeak.",
+        "authors": [
+          {
+            "authorId": "2304324461",
+            "name": "Debajyoti Mazumder"
+          },
+          {
+            "authorId": "2156494929",
+            "name": "Mamta Mamta"
+          },
+          {
+            "authorId": "2187933424",
+            "name": "A. S. Penamakuri"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.30227",
+          "CorpusId": 292287598
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.30227, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "2d2fa409e146db09dfec6b39c485d085890f9866",
+        "title": "To Trust or Not to Trust: Retrieval-Augmented Fact Checking in Speech",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "VeriSpeak highlights that effective speech misinformation detection requires not only speech understanding, but also grounded reasoning over retrieved evidence, and retrieval alone provides limited gains because models frequently conflate retrieved evidence with the spoken claim."
+        },
+        "url": "https://www.semanticscholar.org/paper/2d2fa409e146db09dfec6b39c485d085890f9866",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.30249": {
+      "cached_at": "2026-09-26T05:18:52.610926+00:00",
+      "data": {
+        "abstract": "Coding agents have demonstrated enormous success in solving complex programming problems. To leverage their potential for robot systems, this work introduces Robot Agentic Programming from Demonstrations (RAPID), which automatically generates, verifies, and refines robot programs, given a single visual human demonstration. The iterative agentic loop of code refinement requires several key ingredients: (i) a testable task specification, (ii) action primitives for robot execution, and (iii) an interactive environment for program execution and verification. RAPID infers all three from the demonstration automatically. To make the resulting program reusable beyond the demonstration setting, RAPID uses an object-centric relational program representation that focuses on the underlying structure of the demonstrated strategy rather than the specific motion per se: it expresses the action primitives as trajectory-optimization programs that realize object-level motion effects, while composing them through relational constraints that capture scene-specific geometry at run time. We evaluated RAPID in simulation on eight challenging contact-rich nonprehensile manipulation tasks as well as general prehensile manipulation tasks in the LIBERO-Pro benchmark. We also successfully deployed it on a real Franka arm and evaluated on all eight nonprehensile tasks. In all experiments, RAPID demonstrated strong performance, with generalization over object pose, shape, material, and environment. Website: https://yuyaoliu.me/projects/rapid.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Yu-Yao Liu"
+          },
+          {
+            "authorId": "2302371964",
+            "name": "Jia-Yuan Mao"
+          },
+          {
+            "authorId": "2257179736",
+            "name": "David Hsu"
+          },
+          {
+            "authorId": "1709512",
+            "name": "L. Kaelbling"
+          },
+          {
+            "authorId": "2265489896",
+            "name": "Tom\u00e1s Lozano-P\u00e9rez"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.30249",
+          "CorpusId": 292287434
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.30249, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "8be895e09d09c8ca55f5ae5764c41c7add015b3f",
+        "title": "RAPID: Robot Agentic Programming from Demonstrations",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "This work introduces Robot Agentic Programming from Demonstrations (RAPID), which automatically generates, verifies, and refines robot programs, given a single visual human demonstration, using an object-centric relational program representation."
+        },
+        "url": "https://www.semanticscholar.org/paper/8be895e09d09c8ca55f5ae5764c41c7add015b3f",
+        "venue": "",
+        "year": 2026
+      }
+    },
+    "arxiv:2609.30264": {
+      "cached_at": "2026-09-26T05:18:58.920772+00:00",
+      "data": {
+        "abstract": "Latent world models are typically trained to predict factual transitions, whereas model predictive control (MPC) must compare alternative actions from the same state. A model can therefore achieve low factual prediction error yet poorly distinguish candidate actions. We introduce AD-WM, an action-discriminative joint-embedding world model for counterfactual MPC. AD-WM combines residual latent dynamics with predictor-level action-recovery regularization, using inverse dynamics and a normalized recovery objective motivated by conditional mutual information. Both objectives encourage planning transitions to preserve action information; their auxiliary heads are discarded at test time, leaving MPC unchanged. On OGBench-Cube, AD-WM improves hard-start success from 3.7% to 52.0% over a matched LeWM baseline and improves mean success over the reproduced baseline in four of five simulation environments. Planning diagnostics show that factual prediction error and whole-bank action ranking do not follow the closed-loop success ordering, whereas CEM-aligned elite regret tracks success more closely. With a frozen V-JEPA 2 encoder and matched DROID post-training, AD-WM also improves zero-shot transfer to our Franka setup, increasing basic pick-and-place success from 42.2% to 71.1% without lab-specific adaptation. These results suggest that world models for planning should preserve action-dependent differences needed for counterfactual selection, rather than optimize factual prediction accuracy alone. More videos and code are available at https://ad-wm.github.io/.",
+        "authors": [
+          {
+            "authorId": null,
+            "name": "Jia-Bin Qiu"
+          },
+          {
+            "authorId": null,
+            "name": "Zi-Xuan Chen"
+          },
+          {
+            "authorId": null,
+            "name": "Hong-Ye Cao"
+          },
+          {
+            "authorId": null,
+            "name": "Jie-Qi Shi"
+          },
+          {
+            "authorId": "2055851838",
+            "name": "Jing Huo"
+          },
+          {
+            "authorId": null,
+            "name": "Yang Gao"
+          }
+        ],
+        "citationCount": 0,
+        "externalIds": {
+          "ArXiv": "2609.30264",
+          "CorpusId": 292287345
+        },
+        "fieldsOfStudy": [
+          "Computer Science"
+        ],
+        "influentialCitationCount": 0,
+        "openAccessPdf": {
+          "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2609.30264, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use.",
+          "license": null,
+          "status": null,
+          "url": ""
+        },
+        "paperId": "202c8f63a38f42b7cb9c0cea6b84997021adc439",
+        "title": "AD-WM: Action-Discriminative World Models for Counterfactual Model Predictive Control",
+        "tldr": {
+          "model": "tldr@v2.0.0",
+          "text": "AD-WM, an action-discriminative joint-embedding world model for counterfactual MPC, is introduced, which combines residual latent dynamics with predictor-level action-recovery regularization, using inverse dynamics and a normalized recovery objective motivated by conditional mutual information."
+        },
+        "url": "https://www.semanticscholar.org/paper/202c8f63a38f42b7cb9c0cea6b84997021adc439",
+        "venue": "",
+        "year": 2026
+      }
+    },
     "title:acesearcher bootstrapping reasoning and search for llms via reinforced self play": {
       "cached_at": "2026-06-29T05:15:21.571589+00:00",
       "data": {
